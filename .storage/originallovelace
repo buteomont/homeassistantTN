@@ -1,0 +1,100 @@
+{
+    "data": {
+        "config": {
+            "title": "Buteomont",
+            "views": [
+                {
+                    "badges": [
+                        {
+                            "entity": "binary_sensor.green_extension_cord"
+                        },
+                        {
+                            "entity": "binary_sensor.lightning_detector_battery"
+                        },
+                        {
+                            "entity": "binary_sensor.rain_gauge_battery"
+                        },
+                        {
+                            "entity": "binary_sensor.outdoor_th_battery"
+                        },
+                        {
+                            "entity": "person.david"
+                        },
+                        {
+                            "entity": "sensor.disk_use_percent_home"
+                        },
+                        {
+                            "entity": "sensor.indoor_humidity"
+                        },
+                        {
+                            "entity": "sensor.1_hour_rain"
+                        },
+                        {
+                            "entity": "sensor.memory_free"
+                        },
+                        {
+                            "entity": "sensor.indoor_temperature"
+                        },
+                        {
+                            "entity": "sensor.processor_use"
+                        },
+                        {
+                            "entity": "sensor.24_hour_rain"
+                        },
+                        {
+                            "entity": "sensor.network_throughput_out_wlan0"
+                        },
+                        {
+                            "entity": "sensor.lightning_activity"
+                        },
+                        {
+                            "entity": "sensor.storm_distance"
+                        },
+                        {
+                            "entity": "sensor.swap_use_percent"
+                        },
+                        {
+                            "entity": "sensor.outdoor_temperature"
+                        },
+                        {
+                            "entity": "sensor.memory_use_percent"
+                        },
+                        {
+                            "entity": "sensor.load_1m"
+                        },
+                        {
+                            "entity": "sensor.outdoor_humidity"
+                        },
+                        {
+                            "entity": "sensor.cpu_speed"
+                        },
+                        {
+                            "entity": "sun.sun"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.brother_mfc_j825dw_black_ink_cartridge",
+                                "sensor.brother_mfc_j825dw_cyan_ink_cartridge",
+                                "sensor.brother_mfc_j825dw_magenta_ink_cartridge",
+                                "sensor.brother_mfc_j825dw_yellow_ink_cartridge",
+                                "sensor.brother_mfc_j825dw"
+                            ],
+                            "title": "Kitchen",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.buteomont",
+                            "type": "weather-forecast"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

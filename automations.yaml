@@ -1,0 +1,189 @@
+- id: kitchen_freezer_over_temp
+  alias: Kitchen freezer over temp
+  description: Freezer in kitchen is over 25 degrees
+  trigger:
+  - above: '25'
+    entity_id: sensor.kitchen_freezer_temperature
+    platform: numeric_state
+  condition: []
+  action:
+    data_template:
+      title: 'Warning from Buteomont'
+      message: 'Kitchen freezer temperature is {{states.sensor.kitchen_freezer_temperature.state}}º'
+    service: notify.send_sms
+  initial_state: true
+- id: garage_freezer_over_temp
+  alias: Garage freezer over temp
+  description: Freezer in garage is over 25 degrees
+  trigger:
+  - above: '25'
+    entity_id: sensor.garage_freezer_temperature
+    platform: numeric_state
+  condition: []
+  action:
+    data_template:
+      title: Warning from Buteomont
+      message: Garage freezer temperature is {{states.sensor.garage_freezer_temperature.state}}º
+    service: notify.send_sms
+  initial_state: true
+- id: high_inside_humidity
+  alias: High Humidity
+  description: Humidity in the house is too high
+  trigger:
+  - above: '80'
+    entity_id: sensor.house_humidity
+    platform: numeric_state
+  condition: []
+  action:
+    data_template:
+      title: Warning from Buteomont
+      message: The humidity in the house at Buteomont is {{states.sensor.house_humidity.state}}%.
+    service: notify.send_sms
+  initial_state: true
+    
+- id: '1590533016721'
+  alias: Basement Humidity Alarm
+  description: Basement is too humid
+  trigger:
+  - entity_id: sensor.basement_humidity
+    above: '80'
+    platform: numeric_state
+  condition: []
+  action:
+  - data_template:
+      title: Warning from Buteomont
+      message: Warning - the basement humidity is  {{states.sensor.basement_humidity.state}}%
+    service: notify.send_sms
+  initial_state: true
+
+- id: high_inside_temperature
+  alias: High House Temperature
+  description: Temperature in the house at Buteomont is too high
+  trigger:
+  - above: '80'
+    entity_id: sensor.indoor_temperature
+    platform: numeric_state
+  condition: []
+  action:
+    data_template:
+      title: Warning from Buteomont
+      message: The temperature in Buteomont is {{states.sensor.indoor_temperature.state}}º.
+    service: notify.send_sms
+  initial_state: true
+- id: '1577817691725'
+  alias: Notify On Living Room Motion
+  description: Send text message when motion is detected in living room
+  trigger:
+  - entity_id: binary_sensor.living_room_motion
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      message: Motion was detected in the living room at Buteomont!
+    service: notify.send_sms
+  initial_state: false
+  
+- id: '1590533675336'
+  alias: Garage Freezer Low Battery Alarm
+  description: Send email when battery in freezer sensor is low
+  trigger:
+  - entity_id: binary_sensor.garage_freezer_battery
+    from: '0'
+    platform: state
+    to: '1'
+  condition: []
+  action:
+  - data_template:
+        message: "The battery in the garage freezer temperature sensor is dying.\nPlease replace it at your earliest opportunity."
+        title: Low Battery Notice
+    service: notify.send_email
+  
+- id: 'kitchenFreezerLowBatteryAlarm'
+  alias: Kitchen Freezer Low Battery Alarm
+  description: Send email when battery in freezer sensor is low
+  trigger:
+  - entity_id: binary_sensor.kitchen_freezer_battery
+    from: '0'
+    platform: state
+    to: '1'
+  condition: []
+  action:
+  - data_template:
+        message: "The battery in the kitchen freezer temperature sensor is dying.\nPlease replace it at your earliest opportunity."
+        title: Low Battery Notice
+    service: notify.send_email
+  
+- id: 'lightningDetectorLowBatteryAlarm'
+  alias: Lightning Detector Low Battery Alarm
+  description: Send email when battery in lightning detector is low
+  trigger:
+  - entity_id: binary_sensor.lightning_detector_battery
+    from: '0'
+    platform: state
+    to: '1'
+  condition: []
+  action:
+  - data_template:
+        message: "The battery in the lightning detector is dying.\nPlease replace it at your earliest opportunity."
+        title: Low Battery Notice
+    service: notify.send_email
+  
+- id: 'rainGaugeLowBatteryAlarm'
+  alias: Rain Gauge Low Battery Alarm
+  description: Send email when battery in rain gauge is low
+  trigger:
+  - entity_id: binary_sensor.rain_gauge_battery
+    from: '0'
+    platform: state
+    to: '1'
+  condition: []
+  action:
+  - data_template:
+        message: "The battery in the rain gauge is dying.\nPlease replace it at your earliest opportunity."
+        title: Low Battery Notice
+    service: notify.send_email
+  
+- id: 'outdoorTHLowBatteryAlarm'
+  alias: Outdoor TH Low Battery Alarm
+  description: Send email when battery in outdoor temp/humidity sensor is low
+  trigger:
+  - entity_id: binary_sensor.outdoor_th_battery
+    from: '0'
+    platform: state
+    to: '1'
+  condition: []
+  action:
+  - data_template:
+        message: "The battery in the outdoor temperature/humidity sensor is dying.\nPlease replace it at your earliest opportunity."
+        title: Low Battery Notice
+    service: notify.send_email
+    
+- id: 'driveway_motion_timer'
+  alias: driveway alarm reset
+  description: Start a timer when driveway alert is triggered
+  trigger:
+  - entity_id: binary_sensor.driveway_alert
+    to: 'on'
+    platform: state
+  condition: []
+  action:
+  - service: timer.start
+    entity_id: timer.driveway_motion
+
+- id: driveway_motion_alert
+  alias: arriving visitors
+  description: Driveway alert when visitors arrive
+  trigger:
+  - from: 'off'
+    to: 'on'
+    entity_id: binary_sensor.driveway_alert
+    platform: state
+  condition: []
+  action:
+    data_template:
+      title: Alert from Buteomont
+      message: There are visitors arriving or leaving.
+    service: notify.send_sms
+  initial_state: true

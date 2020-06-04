@@ -1,0 +1,28 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": "a4c54e41ca8b45e3b7e8dee02d8d9434",
+                "config_entries": [
+                    "2835824468554807b7eff4c0951b96da"
+                ],
+                "connections": [],
+                "id": "6c05f8d7cab947f6b6ecb7712df5097c",
+                "identifiers": [
+                    [
+                        "ipp",
+                        "e3248000-80ce-11db-8000-001ba99b68b5"
+                    ]
+                ],
+                "manufacturer": "Brother",
+                "model": "MFC-J825DW",
+                "name": "Brother MFC-J825DW",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

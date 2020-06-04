@@ -1,0 +1,64 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "track_home": true
+                },
+                "domain": "met",
+                "entry_id": "ec4027c58a5141e994eb58d5d55b5ea0",
+                "options": {},
+                "source": "onboarding",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Home",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "base_path": "/ipp/port1",
+                    "host": "10.10.6.245",
+                    "name": "Brother MFC-J825DW",
+                    "port": 631,
+                    "ssl": false,
+                    "uuid": "e3248000-80ce-11db-8000-001ba99b68b5",
+                    "verify_ssl": false
+                },
+                "domain": "ipp",
+                "entry_id": "2835824468554807b7eff4c0951b96da",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Brother MFC-J825DW",
+                "unique_id": "e3248000-80ce-11db-8000-001ba99b68b5",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "broker": "localhost",
+                    "discovery": true,
+                    "port": 1883
+                },
+                "domain": "mqtt",
+                "entry_id": "8f5de2c9af7c416dad0ca8d0f4185596",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "localhost",
+                "unique_id": null,
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

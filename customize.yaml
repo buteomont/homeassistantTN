@@ -1,0 +1,10 @@
+sensor.cumulative_lightning:
+  hidden: true
+sensor.cumulative_rain:
+  hidden: true
+binary_sensor.updater:
+  hidden: true
+person.homeassistant:
+  hidden: true
+sensor.24_hour_rain: {}
+
