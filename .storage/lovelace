@@ -75,12 +75,15 @@
                             "type": "history-graph"
                         },
                         {
-                            "entity": "sensor.lightning_activity",
-                            "max": 100,
-                            "min": 0,
-                            "name": "Lightning Strikes/hour",
-                            "type": "gauge",
-                            "unit": " "
+                            "entities": [
+                                {
+                                    "entity": "sensor.lightning_activity"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "title": "Lightning Strikes/Hr",
+                            "type": "history-graph"
                         },
                         {
                             "entities": [
@@ -98,6 +101,7 @@
                                 },
                                 {
                                     "entity": "timer.driveway_motion",
+                                    "icon": "mdi:car-side",
                                     "name": "Driveway"
                                 }
                             ],
@@ -105,20 +109,6 @@
                             "show_state": false,
                             "title": "Motion Detection",
                             "type": "glance"
-                        },
-                        {
-                            "entity": "automation.notify_on_living_room_motion",
-                            "hold_action": {
-                                "action": "more-info"
-                            },
-                            "icon": "mdi:message-text-outline",
-                            "icon_height": "36px",
-                            "show_icon": true,
-                            "show_name": true,
-                            "tap_action": {
-                                "action": "toggle"
-                            },
-                            "type": "button"
                         },
                         {
                             "entities": [
@@ -145,6 +135,26 @@
                             "type": "glance"
                         },
                         {
+                            "entity": "weather.buteomont",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.kitchen_freezer_temperature",
+                                    "name": "Kitchen"
+                                },
+                                {
+                                    "entity": "sensor.garage_freezer_temperature",
+                                    "name": "Garage"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "title": "Freezers",
+                            "type": "history-graph"
+                        },
+                        {
                             "entities": [
                                 {
                                     "entity": "sensor.indoor_temperature",
@@ -157,18 +167,12 @@
                                 {
                                     "entity": "sensor.basement_temperature",
                                     "name": "Basement"
-                                },
-                                {
-                                    "entity": "sensor.kitchen_freezer_temperature",
-                                    "name": "K Freezer"
-                                },
-                                {
-                                    "entity": "sensor.garage_freezer_temperature",
-                                    "name": "G Freezer"
                                 }
                             ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
                             "title": "Temperature",
-                            "type": "glance"
+                            "type": "history-graph"
                         },
                         {
                             "entities": [
@@ -183,18 +187,12 @@
                                 {
                                     "entity": "sensor.basement_humidity",
                                     "name": "Basement"
-                                },
-                                {
-                                    "entity": "sensor.1_hour_rain",
-                                    "name": "1hr Rain"
                                 }
                             ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
                             "title": "Humidity",
-                            "type": "glance"
-                        },
-                        {
-                            "entity": "weather.buteomont",
-                            "type": "weather-forecast"
+                            "type": "history-graph"
                         },
                         {
                             "entities": [
@@ -206,108 +204,32 @@
                             ],
                             "title": "Printer",
                             "type": "entities"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                },
+                {
+                    "badges": [
+                        {
+                            "entity": "sensor.cumulative_lightning"
                         },
                         {
-                            "entity": "automation.arriving_visitors_2",
-                            "hold_action": {
-                                "action": "more-info"
-                            },
-                            "icon": "mdi:car",
-                            "name": "Enable Driveway Alert",
-                            "show_icon": true,
-                            "show_name": true,
-                            "tap_action": {
-                                "action": "toggle"
-                            },
-                            "type": "button"
-                        },
-                        {
-                            "entity": "timer.driveway_motion",
-                            "type": "entity"
-                        },
-                        {
-                            "cards": [
-                                {
-                                    "entity": "binary_sensor.green_extension_cord",
-                                    "hold_action": {
-                                        "action": "more-info"
-                                    },
-                                    "icon": "mdi:power-plug",
-                                    "show_icon": true,
-                                    "show_name": true,
-                                    "tap_action": {
-                                        "action": "call-service",
-                                        "service": "mqtt.publish",
-                                        "service_data": {
-                                            "payload": "toggle",
-                                            "topic": "cmnd/green_extension_cord/Power"
-                                        }
-                                    },
-                                    "type": "button"
-                                }
-                            ],
-                            "type": "vertical-stack"
-                        },
-                        {
-                            "entity": "sensor.load_1m",
-                            "max": 100,
-                            "min": 0,
-                            "name": "CPU Load (1m)",
-                            "severity": {
-                                "green": 0.25,
-                                "red": 0.75,
-                                "yellow": 0.5
-                            },
-                            "type": "gauge"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.rain_gauge_signal_strength",
-                                    "name": "Rain Gauge"
-                                },
-                                {
-                                    "entity": "sensor.driveway_alert_signal_strength",
-                                    "name": "Driveway Alert"
-                                },
-                                {
-                                    "entity": "sensor.garage_freezer_temperature_signal_strength",
-                                    "name": "Garage Freezer"
-                                },
-                                {
-                                    "entity": "sensor.kitchen_freezer_temperature_signal_strength",
-                                    "name": "Kitchen Freezer"
-                                },
-                                {
-                                    "entity": "sensor.kitchen_motion_signal_strength",
-                                    "name": "Kitchen Motion"
-                                },
-                                {
-                                    "entity": "sensor.living_room_motion_signal_strength",
-                                    "name": "Living Room Motion"
-                                },
-                                {
-                                    "entity": "sensor.study_motion_signal_strength",
-                                    "name": "Study Motion"
-                                },
-                                {
-                                    "entity": "sensor.outdoor_th_signal_strength",
-                                    "name": "Outdoor TH"
-                                },
-                                {
-                                    "entity": "sensor.lightning_detector_signal_strength",
-                                    "name": "Lightning Detector"
-                                }
-                            ],
-                            "title": "RSSI",
-                            "type": "entities"
-                        },
+                            "entity": "sensor.cumulative_rain"
+                        }
+                    ],
+                    "cards": [
                         {
                             "entities": [
                                 {
                                     "entity": "sensor.driveway_alert_frequency",
                                     "icon": "mdi:radio-tower",
                                     "name": "Driveway Alert"
+                                },
+                                {
+                                    "entity": "sensor.rain_gauge_frequency",
+                                    "icon": "mdi:radio-tower",
+                                    "name": "Rain Gauge"
                                 },
                                 {
                                     "entity": "sensor.garage_freezer_temperature_frequency",
@@ -340,18 +262,160 @@
                                     "name": "Outdoor TH"
                                 },
                                 {
-                                    "entity": "sensor.rain_gauge_frequency",
+                                    "entity": "sensor.lightning_detector_frequency",
                                     "icon": "mdi:radio-tower",
-                                    "name": "Rain Gauge"
+                                    "name": "Lightning Detector"
                                 }
                             ],
                             "show_header_toggle": false,
                             "title": "Frequencies",
                             "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.driveway_alert_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Driveway Alert"
+                                },
+                                {
+                                    "entity": "sensor.rain_gauge_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Rain Gauge"
+                                },
+                                {
+                                    "entity": "sensor.garage_freezer_temperature_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Garage Freezer"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_freezer_temperature_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Kitchen Freezer"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_motion_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Kitchen Motion"
+                                },
+                                {
+                                    "entity": "sensor.living_room_motion_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Living Room Motion"
+                                },
+                                {
+                                    "entity": "sensor.study_motion_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Study Motion"
+                                },
+                                {
+                                    "entity": "sensor.outdoor_th_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Outdoor TH"
+                                },
+                                {
+                                    "entity": "sensor.lightning_detector_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Lightning Detector"
+                                }
+                            ],
+                            "title": "RSSI",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.network_throughput_out_wlan0"
+                                },
+                                {
+                                    "entity": "sensor.cpu_speed"
+                                },
+                                {
+                                    "entity": "sensor.disk_use_percent_home"
+                                },
+                                {
+                                    "entity": "sensor.memory_free"
+                                },
+                                {
+                                    "entity": "sensor.memory_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.processor_use"
+                                },
+                                {
+                                    "entity": "sensor.load_1m"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Hardware",
+                            "type": "entities"
                         }
                     ],
-                    "path": "default_view",
-                    "title": "Home"
+                    "path": "internal-specs",
+                    "title": "Internal Specs"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "automation.arriving_visitors_2",
+                            "hold_action": {
+                                "action": "more-info"
+                            },
+                            "icon": "mdi:car",
+                            "name": "Enable Driveway Alert",
+                            "show_icon": true,
+                            "show_name": true,
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "type": "button"
+                        },
+                        {
+                            "entity": "automation.notify_on_living_room_motion",
+                            "hold_action": {
+                                "action": "more-info"
+                            },
+                            "icon": "mdi:message-text-outline",
+                            "icon_height": "36px",
+                            "show_icon": true,
+                            "show_name": true,
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "type": "button"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "binary_sensor.green_extension_cord",
+                                    "hold_action": {
+                                        "action": "more-info"
+                                    },
+                                    "icon": "mdi:power-plug",
+                                    "show_icon": true,
+                                    "show_name": true,
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "mqtt.publish",
+                                        "service_data": {
+                                            "payload": "toggle",
+                                            "topic": "cmnd/green_extension_cord/Power"
+                                        }
+                                    },
+                                    "type": "button"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "entity": "timer.driveway_motion",
+                            "name": "Trigger Driveway Motion Timer",
+                            "type": "entity"
+                        }
+                    ],
+                    "path": "controls",
+                    "title": "Controls"
                 }
             ]
         }
