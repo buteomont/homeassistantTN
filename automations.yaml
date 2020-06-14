@@ -8,8 +8,8 @@
   condition: []
   action:
     data_template:
-      title: 'Warning from Buteomont'
-      message: 'Kitchen freezer temperature is {{states.sensor.kitchen_freezer_temperature.state}}º'
+      title: Warning from Buteomont
+      message: Kitchen freezer temperature is {{states.sensor.kitchen_freezer_temperature.state}}º
     service: notify.send_sms
   initial_state: true
 - id: garage_freezer_over_temp
@@ -40,7 +40,6 @@
       message: The humidity in the house at Buteomont is {{states.sensor.house_humidity.state}}%.
     service: notify.send_sms
   initial_state: true
-    
 - id: '1590533016721'
   alias: Basement Humidity Alarm
   description: Basement is too humid
@@ -55,7 +54,41 @@
       message: Warning - the basement humidity is  {{states.sensor.basement_humidity.state}}%
     service: notify.send_sms
   initial_state: true
-
+  
+- id: reduce_shop_humidity
+  alias: Reduce Shop Humidity
+  description: Turn on the shop fan if shop humidity is significantly higher than
+    ambient
+  trigger:
+  - for: 00:00:01
+    platform: template
+    value_template: '{{ states.sensor.shop_humidity.state | int > (states.sensor.outdoor_humidity.state
+      | int +5) }}'
+  condition: []
+  action:
+  - data:
+      payload: 'ON'
+      topic: cmnd/shop_exhaust_fan/Power
+    service: mqtt.publish
+  initial_state: true
+  
+- id: shop_humidity_is_ok
+  alias: Shop Humidity Is OK
+  description: Turn off the shop fan if shop humidity is not significantly higher
+    than ambient
+  trigger:
+  - for: 00:00:01
+    platform: template
+    value_template: '{{ states.sensor.shop_humidity.state | int <= (states.sensor.outdoor_humidity.state
+      | int  +4) }}'
+  condition: []
+  action:
+  - data:
+      payload: 'OFF'
+      topic: cmnd/shop_exhaust_fan/Power
+    service: mqtt.publish
+  initial_state: true
+  
 - id: high_inside_temperature
   alias: High House Temperature
   description: Temperature in the house at Buteomont is too high
@@ -84,7 +117,6 @@
       message: Motion was detected in the living room at Buteomont!
     service: notify.send_sms
   initial_state: false
-  
 - id: '1590533675336'
   alias: Garage Freezer Low Battery Alarm
   description: Send email when battery in freezer sensor is low
@@ -96,11 +128,12 @@
   condition: []
   action:
   - data_template:
-        message: "The battery in the garage freezer temperature sensor is dying.\nPlease replace it at your earliest opportunity."
-        title: Low Battery Notice
+      message: 'The battery in the garage freezer temperature sensor is dying.
+
+        Please replace it at your earliest opportunity.'
+      title: Low Battery Notice
     service: notify.send_email
-  
-- id: 'kitchenFreezerLowBatteryAlarm'
+- id: kitchenFreezerLowBatteryAlarm
   alias: Kitchen Freezer Low Battery Alarm
   description: Send email when battery in freezer sensor is low
   trigger:
@@ -111,11 +144,12 @@
   condition: []
   action:
   - data_template:
-        message: "The battery in the kitchen freezer temperature sensor is dying.\nPlease replace it at your earliest opportunity."
-        title: Low Battery Notice
+      message: 'The battery in the kitchen freezer temperature sensor is dying.
+
+        Please replace it at your earliest opportunity.'
+      title: Low Battery Notice
     service: notify.send_email
-  
-- id: 'lightningDetectorLowBatteryAlarm'
+- id: lightningDetectorLowBatteryAlarm
   alias: Lightning Detector Low Battery Alarm
   description: Send email when battery in lightning detector is low
   trigger:
@@ -126,11 +160,12 @@
   condition: []
   action:
   - data_template:
-        message: "The battery in the lightning detector is dying.\nPlease replace it at your earliest opportunity."
-        title: Low Battery Notice
+      message: 'The battery in the lightning detector is dying.
+
+        Please replace it at your earliest opportunity.'
+      title: Low Battery Notice
     service: notify.send_email
-  
-- id: 'rainGaugeLowBatteryAlarm'
+- id: rainGaugeLowBatteryAlarm
   alias: Rain Gauge Low Battery Alarm
   description: Send email when battery in rain gauge is low
   trigger:
@@ -141,11 +176,12 @@
   condition: []
   action:
   - data_template:
-        message: "The battery in the rain gauge is dying.\nPlease replace it at your earliest opportunity."
-        title: Low Battery Notice
+      message: 'The battery in the rain gauge is dying.
+
+        Please replace it at your earliest opportunity.'
+      title: Low Battery Notice
     service: notify.send_email
-  
-- id: 'outdoorTHLowBatteryAlarm'
+- id: outdoorTHLowBatteryAlarm
   alias: Outdoor TH Low Battery Alarm
   description: Send email when battery in outdoor temp/humidity sensor is low
   trigger:
@@ -156,11 +192,12 @@
   condition: []
   action:
   - data_template:
-        message: "The battery in the outdoor temperature/humidity sensor is dying.\nPlease replace it at your earliest opportunity."
-        title: Low Battery Notice
+      message: 'The battery in the outdoor temperature/humidity sensor is dying.
+
+        Please replace it at your earliest opportunity.'
+      title: Low Battery Notice
     service: notify.send_email
-    
-- id: 'driveway_motion_timer'
+- id: driveway_motion_timer
   alias: driveway alarm reset
   description: Start a timer when driveway alert is triggered
   trigger:
@@ -171,7 +208,6 @@
   action:
   - service: timer.start
     entity_id: timer.driveway_motion
-
 - id: driveway_motion_alert
   alias: arriving visitors
   description: Driveway alert when visitors arrive

@@ -1,0 +1,107 @@
+############### Shop Binary Sensors
+- platform: mqtt
+  name: "Shop Exhaust Fan"
+  state_topic: "stat/shop_exhaust_fan/POWER"
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 0
+
+- platform: mqtt
+  name: "Green Extension Cord"
+  state_topic: "stat/green_extension_cord/POWER"
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 0
+
+- platform: mqtt
+  name: "Living Room Motion"
+  state_topic: "rtl_433/wwwServer/devices/X10-RF/E/4/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  device_class: "motion"
+  qos: 0
+
+- platform: mqtt
+  name: "Driveway Alert"
+  state_topic: "rtl_433/raspberrypi/devices/DrivewayAlert/rows/0/data"
+  payload_on: "720"
+  payload_off: "0"
+  device_class: "motion"
+  qos: 0
+
+- platform: mqtt
+  name: "Living Room Illuminated"
+  state_topic: "rtl_433/wwwServer/devices/X10-RF/E/5/state"
+  payload_on: "OFF"
+  payload_off: "ON"
+  qos: 0
+
+- platform: mqtt
+  name: "Study Motion"
+  state_topic: "rtl_433/wwwServer/devices/X10-RF/B/4/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  device_class: "motion"
+  qos: 0
+
+- platform: mqtt
+  name: "Study Illuminated"
+  state_topic: "rtl_433/wwwServer/devices/X10-RF/B/5/state"
+  payload_on: "OFF"
+  payload_off: "ON"
+  qos: 0
+
+- platform: mqtt
+  name: "Kitchen Motion"
+  state_topic: "rtl_433/wwwServer/devices/X10-RF/A/1/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  device_class: "motion"
+  qos: 0
+
+- platform: mqtt
+  name: "Kitchen Illuminated"
+  state_topic: "rtl_433/wwwServer/devices/X10-RF/A/2/state"
+  payload_on: "OFF"
+  payload_off: "ON"
+  qos: 0
+
+- platform: mqtt
+  name: "Lightning Detector Battery"
+  state_topic: "rtl_433/tinyserver/devices/Acurite-6045M/A/+/battery_ok"
+  device_class: "battery"
+  payload_on: "0"
+  payload_off: "1"
+  qos: 0
+  
+- platform: mqtt
+  name: "Rain Gauge Battery"
+  state_topic: "rtl_433/tinyserver/devices/Acurite-Rain899/0/+/battery_ok"
+  device_class: "battery"
+  payload_on: "1" #appears to be inverted vs. the lightning detector
+  payload_off: "0"
+  qos: 0
+
+- platform: mqtt
+  name: "Outdoor TH Battery"
+  state_topic: "rtl_433/tinyserver/devices/Acurite-609TXC/246/battery_ok"
+  device_class: "battery"
+  payload_on: "0"
+  payload_off: "1"
+  qos: 0
+  
+- platform: mqtt
+  name: "Kitchen Freezer Battery"
+  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/2F/+/battery_ok"
+  device_class: "battery"
+  payload_on: "0"
+  payload_off: "1"
+  qos: 0
+  
+- platform: mqtt
+  name: "Garage Freezer Battery"
+  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/1R/+/battery_ok"
+  device_class: "battery"
+  payload_on: "0" 
+  payload_off: "1"
+  qos: 0

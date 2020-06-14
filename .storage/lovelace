@@ -30,6 +30,12 @@
                             "entity": "sensor.basement_humidity"
                         },
                         {
+                            "entity": "sensor.shop_humidity"
+                        },
+                        {
+                            "entity": "binary_sensor.shop_exhaust_fan"
+                        },
+                        {
                             "entity": "sensor.indoor_temperature"
                         },
                         {
@@ -37,6 +43,9 @@
                         },
                         {
                             "entity": "sensor.basement_temperature"
+                        },
+                        {
+                            "entity": "sensor.shop_temperature"
                         },
                         {
                             "entity": "sensor.kitchen_freezer_temperature"
@@ -81,7 +90,7 @@
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 0,
+                            "refresh_interval": 30,
                             "title": "Lightning Strikes/Hr",
                             "type": "history-graph"
                         },
@@ -150,7 +159,7 @@
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 0,
+                            "refresh_interval": 30,
                             "title": "Freezers",
                             "type": "history-graph"
                         },
@@ -167,10 +176,14 @@
                                 {
                                     "entity": "sensor.basement_temperature",
                                     "name": "Basement"
+                                },
+                                {
+                                    "entity": "sensor.shop_temperature",
+                                    "name": "Shop"
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 0,
+                            "refresh_interval": 30,
                             "title": "Temperature",
                             "type": "history-graph"
                         },
@@ -187,10 +200,14 @@
                                 {
                                     "entity": "sensor.basement_humidity",
                                     "name": "Basement"
+                                },
+                                {
+                                    "entity": "sensor.shop_humidity",
+                                    "name": "Shop"
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 0,
+                            "refresh_interval": 30,
                             "title": "Humidity",
                             "type": "history-graph"
                         },
@@ -351,8 +368,8 @@
                             "type": "entities"
                         }
                     ],
-                    "path": "internal-specs",
-                    "title": "Internal Specs"
+                    "path": "metadata",
+                    "title": "Metadata"
                 },
                 {
                     "badges": [],
@@ -386,6 +403,11 @@
                             "type": "button"
                         },
                         {
+                            "entity": "timer.driveway_motion",
+                            "name": "Trigger Driveway Motion Timer",
+                            "type": "entity"
+                        },
+                        {
                             "cards": [
                                 {
                                     "entity": "binary_sensor.green_extension_cord",
@@ -404,14 +426,32 @@
                                         }
                                     },
                                     "type": "button"
+                                },
+                                {
+                                    "cards": [
+                                        {
+                                            "entity": "binary_sensor.shop_exhaust_fan",
+                                            "hold_action": {
+                                                "action": "more-info"
+                                            },
+                                            "icon": "mdi:fan",
+                                            "show_icon": true,
+                                            "show_name": true,
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "mqtt.publish",
+                                                "service_data": {
+                                                    "payload": "toggle",
+                                                    "topic": "cmnd/shop_exhaust_fan/Power"
+                                                }
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "type": "vertical-stack"
                                 }
                             ],
                             "type": "vertical-stack"
-                        },
-                        {
-                            "entity": "timer.driveway_motion",
-                            "name": "Trigger Driveway Motion Timer",
-                            "type": "entity"
                         }
                     ],
                     "path": "controls",
