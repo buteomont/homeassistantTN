@@ -80,7 +80,7 @@
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 5,
+                            "refresh_interval": 1,
                             "type": "history-graph"
                         },
                         {
@@ -90,7 +90,7 @@
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 30,
+                            "refresh_interval": 1,
                             "title": "Lightning Strikes/Hr",
                             "type": "history-graph"
                         },
@@ -109,7 +109,7 @@
                                     "name": "Kitchen"
                                 },
                                 {
-                                    "entity": "timer.driveway_motion",
+                                    "entity": "binary_sensor.driveway_alert",
                                     "icon": "mdi:car-side",
                                     "name": "Driveway"
                                 }
@@ -159,7 +159,7 @@
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 30,
+                            "refresh_interval": 1,
                             "title": "Freezers",
                             "type": "history-graph"
                         },
@@ -183,7 +183,7 @@
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 30,
+                            "refresh_interval": 1,
                             "title": "Temperature",
                             "type": "history-graph"
                         },
@@ -207,7 +207,7 @@
                                 }
                             ],
                             "hours_to_show": 24,
-                            "refresh_interval": 30,
+                            "refresh_interval": 1,
                             "title": "Humidity",
                             "type": "history-graph"
                         },
@@ -368,8 +368,8 @@
                             "type": "entities"
                         }
                     ],
-                    "path": "metadata",
-                    "title": "Metadata"
+                    "path": "systeminfo",
+                    "title": "System Info"
                 },
                 {
                     "badges": [],
@@ -389,12 +389,13 @@
                             "type": "button"
                         },
                         {
-                            "entity": "automation.notify_on_living_room_motion",
+                            "entity": "automation.notify_on_any_motion",
                             "hold_action": {
                                 "action": "more-info"
                             },
                             "icon": "mdi:message-text-outline",
-                            "icon_height": "36px",
+                            "icon_height": "35px",
+                            "name": "Toggle motion detection",
                             "show_icon": true,
                             "show_name": true,
                             "tap_action": {

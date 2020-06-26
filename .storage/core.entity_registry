@@ -418,7 +418,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": null,
                 "device_class": null,
                 "device_id": null,
@@ -434,7 +434,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": null,
                 "device_class": null,
                 "device_id": null,
@@ -447,6 +447,38 @@
                 "platform": "automation",
                 "supported_features": 0,
                 "unique_id": "shop_temperature_is_ok",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "automation.cancel_driveway_alert",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Cancel Driveway Alert",
+                "platform": "automation",
+                "supported_features": 0,
+                "unique_id": "cancel_driveway_alert",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "automation.notify_on_any_motion",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Notify On Any Motion",
+                "platform": "automation",
+                "supported_features": 0,
+                "unique_id": "1593048803953",
                 "unit_of_measurement": null
             }
         ]

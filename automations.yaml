@@ -54,7 +54,6 @@
       message: Warning - the basement humidity is  {{states.sensor.basement_humidity.state}}%
     service: notify.send_sms
   initial_state: true
-  
 - id: reduce_shop_humidity
   alias: Reduce Shop Humidity
   description: Turn on the shop fan if shop humidity is significantly higher than
@@ -71,7 +70,6 @@
       topic: cmnd/shop_exhaust_fan/Power
     service: mqtt.publish
   initial_state: true
-  
 - id: shop_humidity_is_ok
   alias: Shop Humidity Is OK
   description: Turn off the shop fan if shop humidity is not significantly higher
@@ -88,7 +86,6 @@
       topic: cmnd/shop_exhaust_fan/Power
     service: mqtt.publish
   initial_state: true
-  
 - id: high_inside_temperature
   alias: High House Temperature
   description: Temperature in the house at Buteomont is too high
@@ -197,17 +194,6 @@
         Please replace it at your earliest opportunity.'
       title: Low Battery Notice
     service: notify.send_email
-- id: driveway_motion_timer
-  alias: driveway alarm reset
-  description: Start a timer when driveway alert is triggered
-  trigger:
-  - entity_id: binary_sensor.driveway_alert
-    to: 'on'
-    platform: state
-  condition: []
-  action:
-  - service: timer.start
-    entity_id: timer.driveway_motion
 - id: driveway_motion_alert
   alias: arriving visitors
   description: Driveway alert when visitors arrive
@@ -218,8 +204,46 @@
     platform: state
   condition: []
   action:
+  - service: notify.send_sms
     data_template:
       title: Alert from Buteomont
-      message: There are visitors arriving or leaving.
-    service: notify.send_sms
+      message: There are visitors arriving or departing.
+  - service: timer.start
+    entity_id: timer.driveway_motion
   initial_state: true
+- id: cancel_driveway_alert
+  alias: Cancel Driveway Alert
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.driveway_motion
+  action:
+  - service: mqtt.publish
+    data:
+      payload: '0'
+      topic: rtl_433/raspberrypi/devices/DrivewayAlert/rows/0/data
+  initial_state: true
+- id: '1593048803953'
+  alias: Notify On Any Motion
+  description: Motion on any motion sensor will send SMS message
+  trigger:
+  - entity_id: binary_sensor.kitchen_motion
+    from: 'off'
+    platform: state
+    to: 'on'
+  - entity_id: binary_sensor.living_room_motion
+    from: 'off'
+    platform: state
+    to: 'on'
+  - entity_id: binary_sensor.study_motion
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      title: Warning from Buteomont
+      message: Motion was detected at Buteomont!
+    service: notify.send_sms
+  initial_state: false

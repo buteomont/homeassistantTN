@@ -27,7 +27,7 @@
   state_topic: "tele/shop_exhaust_fan/SENSOR"
   qos: 0
   unit_of_measurement: "pct"
-  value_template: '{{ (value_json.SI7021.Humidity | round(0)) -13 }}' # SI7021 module is 13 points inaccurate
+  value_template: '{{ (value_json.SI7021.Humidity | round(0)) -9 }}' # SI7021 module is inaccurate
 
 ############### Indoor Sensors
 - platform: mqtt
