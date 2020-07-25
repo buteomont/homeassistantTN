@@ -144,10 +144,6 @@
                             "type": "glance"
                         },
                         {
-                            "entity": "weather.buteomont",
-                            "type": "weather-forecast"
-                        },
-                        {
                             "entities": [
                                 {
                                     "entity": "sensor.kitchen_freezer_temperature",
@@ -210,6 +206,35 @@
                             "refresh_interval": 1,
                             "title": "Humidity",
                             "type": "history-graph"
+                        },
+                        {
+                            "aspect_ratio": "72%",
+                            "camera_image": "camera.patiocam",
+                            "camera_view": "live",
+                            "entity": "camera.patiocam",
+                            "name": "patioCam",
+                            "show_name": false,
+                            "show_state": false,
+                            "type": "picture-entity"
+                        },
+                        {
+                            "aspect_ratio": "72%",
+                            "camera_image": "camera.shopcam",
+                            "camera_view": "live",
+                            "entity": "camera.shopcam",
+                            "show_name": false,
+                            "show_state": false,
+                            "type": "picture-entity"
+                        },
+                        {
+                            "aspect_ratio": "72%",
+                            "camera_image": "camera.campercam",
+                            "camera_view": "live",
+                            "entity": "camera.campercam",
+                            "name": "camperCam",
+                            "show_name": false,
+                            "show_state": false,
+                            "type": "picture-entity"
                         },
                         {
                             "entities": [
@@ -342,7 +367,8 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.network_throughput_out_wlan0"
+                                    "entity": "sensor.network_throughput_out_wlan0",
+                                    "name": "wlan0 throughput"
                                 },
                                 {
                                     "entity": "sensor.cpu_speed"

@@ -35,22 +35,6 @@
             },
             {
                 "capabilities": {},
-                "config_entry_id": "ec4027c58a5141e994eb58d5d55b5ea0",
-                "device_class": null,
-                "device_id": null,
-                "disabled_by": null,
-                "entity_id": "weather.buteomont",
-                "icon": null,
-                "name": null,
-                "original_icon": null,
-                "original_name": "Buteomont",
-                "platform": "met",
-                "supported_features": 0,
-                "unique_id": "home",
-                "unit_of_measurement": null
-            },
-            {
-                "capabilities": {},
                 "config_entry_id": "2835824468554807b7eff4c0951b96da",
                 "device_class": "timestamp",
                 "device_id": "6c05f8d7cab947f6b6ecb7712df5097c",
@@ -263,22 +247,6 @@
                 "device_class": null,
                 "device_id": null,
                 "disabled_by": null,
-                "entity_id": "automation.test_the_email_trigger",
-                "icon": null,
-                "name": null,
-                "original_icon": null,
-                "original_name": "Test the trigger",
-                "platform": "automation",
-                "supported_features": 0,
-                "unique_id": "test automation",
-                "unit_of_measurement": null
-            },
-            {
-                "capabilities": {},
-                "config_entry_id": null,
-                "device_class": null,
-                "device_id": null,
-                "disabled_by": null,
                 "entity_id": "automation.kitchen_freezer_low_battery_alarm",
                 "icon": null,
                 "name": null,
@@ -450,7 +418,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": null,
                 "device_class": null,
                 "device_id": null,
@@ -466,7 +434,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": null,
                 "device_class": null,
                 "device_id": null,

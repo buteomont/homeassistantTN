@@ -17,6 +17,7 @@ scene: !include scenes.yaml
 notify: !include notifiers.yaml
 sensor: !include sensors.yaml
 binary_sensor: !include binary_sensors.yaml
+camera: !include cameras.yaml
 
 
 homeassistant:
@@ -27,6 +28,26 @@ history:
     entities:
       - sensor.cumulative_rain
       - sensor.cumulative_lightning
+      - sensor.cpu_speed
+      - sensor.load_1m
+      - sensor.memory_free
+      - sensor.memory_use_percent
+      - sensor.brother_mfc_j825dw_cyan_ink_cartridge
+      - sensor.brother_mfc_j825dw_magenta_ink_cartridge
+      - sensor.brother_mfc_j825dw_black_ink_cartridge
+      - sensor.brother_mfc_j825dw_yellow_ink_cartridge
+      - sensor.disk_use_percent_home
+      - sensor.network_throughput_out_wlan0
+      - sensor.processor_use
+      - sensor.driveway_alert_frequency
+      - sensor.rain_gauge_frequency
+      - sensor.garage_freezer_temperature_frequency
+      - sensor.kitchen_freezer_temperature_frequency
+      - sensor.kitchen_motion_frequency
+      - sensor.living_room_motion_frequency
+      - sensor.study_motion_frequency
+      - sensor.outdoor_th_frequency
+      - sensor.lightning_detector_frequency      
       - binary_sensor.lightning_detector_battery
       - binary_sensor.rain_gauge_battery
       - binary_sensor.outdoor_th_battery
@@ -39,7 +60,10 @@ history:
       - automation.kitchen_freezer_low_battery_alarm
       - automation.garage_freezer_low_battery_alarm
       - automation.rain_gauge_low_battery_alarm
+      - automation.cancel_driveway_alert
+      - automation.reduce_shop_humidity
       - weather.tinyhouse
+      - person.david
       - zone.home
 
 timer:

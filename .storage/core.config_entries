@@ -2,22 +2,6 @@
     "data": {
         "entries": [
             {
-                "connection_class": "cloud_poll",
-                "data": {
-                    "track_home": true
-                },
-                "domain": "met",
-                "entry_id": "ec4027c58a5141e994eb58d5d55b5ea0",
-                "options": {},
-                "source": "onboarding",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Home",
-                "unique_id": null,
-                "version": 1
-            },
-            {
                 "connection_class": "local_poll",
                 "data": {
                     "base_path": "/ipp/port1",
