@@ -90,3 +90,16 @@ Traceback (most recent call last):
   File "/usr/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
     data = self._sock.recv(self.max_size)
 TimeoutError: [Errno 110] Connection timed out
+2020-07-29 08:45:08 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-29 08:45:08 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-29 08:45:08 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-29 08:46:17 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 08:51:15 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 08:59:22 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 09:02:23 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 09:03:09 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 09:04:20 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 12:34:39 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-29 12:34:39 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-29 12:34:39 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-29 12:36:25 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed

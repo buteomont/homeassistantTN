@@ -148,14 +148,14 @@
 
 - platform: mqtt
   name: "Garage Freezer Temperature Signal Strength"
-  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/1R/18587/rssi"
+  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/1R/+/rssi"
   qos: 0
   unit_of_measurement: "db"
   value_template: "{{ (value) | round(2) }}"
 
 - platform: mqtt
   name: "Kitchen Freezer Temperature Signal Strength"
-  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/2F/32186/rssi"
+  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/2F/+/rssi"
   qos: 0
   unit_of_measurement: "db"
   value_template: "{{ (value) | round(2) }}"
@@ -212,14 +212,14 @@
 
 - platform: mqtt
   name: "Garage Freezer Temperature Frequency"
-  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/1R/18587/freq"
+  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/1R/+/freq"
   qos: 0
   unit_of_measurement: "MHz"
   value_template: "{{ (value) | round(4) }}"
 
 - platform: mqtt
   name: "Kitchen Freezer Temperature Frequency"
-  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/2F/32186/freq"
+  state_topic: "rtl_433/raspberrypi/devices/Acurite-986/2F/+/freq"
   qos: 0
   unit_of_measurement: "MHz"
   value_template: "{{ (value) | round(4) }}"
