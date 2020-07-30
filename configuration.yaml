@@ -51,6 +51,7 @@ history:
       - binary_sensor.lightning_detector_battery
       - binary_sensor.rain_gauge_battery
       - binary_sensor.outdoor_th_battery
+      - binary_sensor.updater
       - automation.garage_freezer_over_temp
       - automation.kitchen_freezer_over_temp
       - automation.high_humidity
@@ -62,7 +63,13 @@ history:
       - automation.rain_gauge_low_battery_alarm
       - automation.cancel_driveway_alert
       - automation.reduce_shop_humidity
-      - weather.tinyhouse
+      - automation.reduce_shop_temperature
+      - automation.shop_temperature_is_ok
+      - automation.driveway_alarm_reset
+      - camera.campercam
+      - camera.shopcam
+      - camera.patiocam
+      - sensor.brother_mfc_j825dw
       - person.david
       - zone.home
 

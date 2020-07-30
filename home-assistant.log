@@ -1,105 +1,87 @@
-2020-07-24 20:21:19 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-24 20:33:21 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-24 20:33:21 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-24 20:33:21 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-24 23:10:53 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-25 08:41:56 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-25 10:17:50 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-25 12:17:46 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-25 12:17:46 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-25 12:17:46 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-25 12:24:37 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-25 12:27:24 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 12:27:35 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 12:29:25 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 12:29:36 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 12:31:05 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-25 12:41:09 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 12:45:38 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 12:46:01 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-25 12:51:11 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-25 12:59:02 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 13:01:39 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 13:11:09 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 13:12:11 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 13:15:38 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 14:04:40 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-25 17:27:54 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-25 17:27:54 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-25 17:27:54 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-25 17:31:07 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-25 17:36:06 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-25 17:50:32 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 17:55:31 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-25 18:06:09 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-25 18:17:27 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-26 07:52:49 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-26 08:26:57 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-27 10:00:08 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-27 18:12:05 ERROR (MainThread) [aiohttp.server] Error handling request
-Traceback (most recent call last):
-  File "/srv/homeassistant/lib/python3.7/site-packages/aiohttp/web_protocol.py", line 275, in data_received
-    messages, upgraded, tail = self._request_parser.feed_data(data)
-  File "aiohttp\_http_parser.pyx", line 523, in aiohttp._http_parser.HttpParser.feed_data
-aiohttp.http_exceptions.BadStatusLine: invalid HTTP method
-2020-07-27 18:12:05 ERROR (MainThread) [aiohttp.server] Error handling request
-Traceback (most recent call last):
-  File "/srv/homeassistant/lib/python3.7/site-packages/aiohttp/web_protocol.py", line 275, in data_received
-    messages, upgraded, tail = self._request_parser.feed_data(data)
-  File "aiohttp\_http_parser.pyx", line 523, in aiohttp._http_parser.HttpParser.feed_data
-aiohttp.http_exceptions.BadStatusLine: invalid HTTP method
-2020-07-27 19:51:08 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-27 20:35:59 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-27 20:39:19 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-27 20:39:19 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-27 20:39:19 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-27 20:39:47 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: [Errno 104] Connection reset by peer
-2020-07-27 20:40:09 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-27 20:48:18 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-27 20:49:17 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-27 21:57:33 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-27 21:57:33 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-27 21:57:33 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-27 21:57:45 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-27 22:01:09 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-27 23:25:54 ERROR (MainThread) [aiohttp.server] Error handling request
-Traceback (most recent call last):
-  File "/srv/homeassistant/lib/python3.7/site-packages/aiohttp/web_protocol.py", line 275, in data_received
-    messages, upgraded, tail = self._request_parser.feed_data(data)
-  File "aiohttp\_http_parser.pyx", line 523, in aiohttp._http_parser.HttpParser.feed_data
-aiohttp.http_exceptions.BadStatusLine: invalid HTTP method
-2020-07-27 23:25:54 ERROR (MainThread) [aiohttp.server] Error handling request
-Traceback (most recent call last):
-  File "/srv/homeassistant/lib/python3.7/site-packages/aiohttp/web_protocol.py", line 275, in data_received
-    messages, upgraded, tail = self._request_parser.feed_data(data)
-  File "aiohttp\_http_parser.pyx", line 523, in aiohttp._http_parser.HttpParser.feed_data
-aiohttp.http_exceptions.BadStatusLine: invalid HTTP method
-2020-07-28 08:44:16 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-28 15:46:48 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-28 15:46:48 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-28 15:46:48 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-28 15:51:06 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-28 15:51:11 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-28 17:45:56 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-07-28 20:46:09 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-28 20:46:09 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-28 20:46:09 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-28 20:47:16 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-28 21:01:40 ERROR (MainThread) [homeassistant] Error doing job: Fatal read error on socket transport
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
-    data = self._sock.recv(self.max_size)
-TimeoutError: [Errno 110] Connection timed out
-2020-07-29 08:45:08 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-29 08:45:08 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-29 08:45:08 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-29 08:46:17 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-29 08:51:15 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-29 08:59:22 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-29 09:02:23 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-29 09:03:09 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
-2020-07-29 09:04:20 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
-2020-07-29 12:34:39 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-29 12:34:39 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-29 12:34:39 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-07-29 12:36:25 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 12:43:20 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 13:00:42 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 13:05:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 13:15:14 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 13:20:48 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 13:25:57 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 13:28:28 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 13:35:43 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 13:46:22 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 13:50:49 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 13:54:58 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 14:00:57 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:05:14 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 14:05:48 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:05:54 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:06:44 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 14:11:02 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:11:54 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 14:15:47 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:15:57 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 14:20:49 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:22:41 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 14:25:49 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 14:30:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:40:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:50:45 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 14:55:45 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 15:00:45 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 15:17:49 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 15:20:41 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 15:20:46 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 15:30:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 15:45:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 15:49:13 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 15:50:43 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 15:54:22 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 16:05:48 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 16:17:56 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 16:20:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 16:25:43 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 16:30:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 16:55:43 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 16:55:49 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 16:58:27 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 17:00:45 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 17:05:47 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 17:10:57 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 17:11:25 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 17:18:59 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 17:25:45 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 17:30:56 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 17:35:50 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 17:40:48 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 17:55:45 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 18:00:47 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-29 18:01:25 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-29 18:08:53 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 06:55:14 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
+2020-07-30 07:05:43 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-30 07:10:32 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 07:10:47 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-30 07:10:57 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 07:13:59 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 07:14:16 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 07:15:17 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 07:17:13 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 07:17:57 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 14:05:09 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:05:09 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:05:09 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:07:16 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 14:10:48 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-30 14:12:00 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 14:16:56 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 14:22:21 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:22:21 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:22:21 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:46:26 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:46:26 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:46:26 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:48:53 ERROR (MainThread) [homeassistant.components.generic.camera] Timeout getting camera image from camperCam
+2020-07-30 14:56:46 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:56:47 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:56:47 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
+2020-07-30 14:58:30 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-30 15:01:16 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-07-30 15:01:20 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
