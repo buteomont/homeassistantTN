@@ -1,0 +1,18 @@
+  - platform: generic
+    still_image_url: http://10.10.6.92:1809/SnapshotJPEG?Resolution=640x480&Quality=Standard&View=Normal
+    name: shopCam
+    verify_ssl: false
+    
+  - platform: generic
+    stream_source: http://10.10.6.181:8181/videostream.cgi?user=visitor&pwd=
+    still_image_url: http://10.10.6.181:8181/snapshot.cgi?user=visitor&pwd=
+    name: patioCam
+    verify_ssl: false
+    
+  - platform: generic
+    stream_source: rtsp://10.10.6.186:554/11
+    still_image_url: http://10.10.6.186/snap.jpg?JpegCam=0
+    username: admin
+    password: foscamera
+    name: camperCam
+    verify_ssl: false
