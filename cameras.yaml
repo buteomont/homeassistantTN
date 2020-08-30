@@ -7,6 +7,12 @@
     stream_source: http://10.10.6.181:8181/videostream.cgi?user=visitor&pwd=
     still_image_url: http://10.10.6.181:8181/snapshot.cgi?user=visitor&pwd=
     name: patioCam
+    verify_ssl: false   
+    
+  - platform: generic
+    stream_source: http://10.10.6.23/videostream.cgi?user=visitor&pwd=
+    still_image_url: http://10.10.6.23/snapshot.cgi?user=visitor&pwd=
+    name: gateCam
     verify_ssl: false
     
   - platform: generic

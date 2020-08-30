@@ -21,6 +21,9 @@
                             "entity": "binary_sensor.outdoor_th_battery"
                         },
                         {
+                            "entity": "binary_sensor.pumphouse_th_battery"
+                        },
+                        {
                             "entity": "sensor.indoor_humidity"
                         },
                         {
@@ -33,6 +36,9 @@
                             "entity": "sensor.shop_humidity"
                         },
                         {
+                            "entity": "sensor.pumphouse_humidity"
+                        },
+                        {
                             "entity": "binary_sensor.shop_exhaust_fan"
                         },
                         {
@@ -43,6 +49,9 @@
                         },
                         {
                             "entity": "sensor.basement_temperature"
+                        },
+                        {
+                            "entity": "sensor.pumphouse_temperature"
                         },
                         {
                             "entity": "sensor.shop_temperature"
@@ -58,6 +67,9 @@
                         },
                         {
                             "entity": "sensor.24_hour_rain"
+                        },
+                        {
+                            "entity": "sensor.1_week_rain"
                         },
                         {
                             "entity": "sensor.storm_distance"
@@ -77,6 +89,9 @@
                                 },
                                 {
                                     "entity": "sensor.1_hour_rain"
+                                },
+                                {
+                                    "entity": "sensor.1_week_rain"
                                 }
                             ],
                             "hours_to_show": 24,
@@ -176,6 +191,10 @@
                                 {
                                     "entity": "sensor.shop_temperature",
                                     "name": "Shop"
+                                },
+                                {
+                                    "entity": "sensor.pumphouse_temperature",
+                                    "name": "Pumphouse"
                                 }
                             ],
                             "hours_to_show": 24,
@@ -200,6 +219,10 @@
                                 {
                                     "entity": "sensor.shop_humidity",
                                     "name": "Shop"
+                                },
+                                {
+                                    "entity": "sensor.pumphouse_humidity",
+                                    "name": "Pumphouse"
                                 }
                             ],
                             "hours_to_show": 24,
@@ -232,6 +255,15 @@
                             "camera_view": "live",
                             "entity": "camera.campercam",
                             "name": "camperCam",
+                            "show_name": false,
+                            "show_state": false,
+                            "type": "picture-entity"
+                        },
+                        {
+                            "aspect_ratio": "0%",
+                            "camera_image": "camera.gatecam",
+                            "entity": "camera.gatecam",
+                            "name": "GateCam",
                             "show_name": false,
                             "show_state": false,
                             "type": "picture-entity"

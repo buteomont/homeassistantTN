@@ -105,3 +105,11 @@
   payload_on: "0" 
   payload_off: "1"
   qos: 0
+
+- platform: mqtt
+  name: "Pumphouse TH Battery"
+  state_topic: "rtl_433/Pumphouse-pi/devices/Acurite-Tower/B/+/battery_ok"
+  device_class: "battery"
+  payload_on: "0"
+  payload_off: "1"
+  qos: 0

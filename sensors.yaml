@@ -119,11 +119,32 @@
     query: select abs(round((select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" and created < (datetime('now','-24 hours')) order by created desc  limit 1),2)) as 'delta';
     column: 'delta'
     unit_of_measurement: "mm"
+  - name: 1 Week Rain
+    query: select abs(round((select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" and created < (datetime('now','-168 hours')) order by created desc  limit 1),2)) as 'delta';
+    column: 'delta'
+    unit_of_measurement: "mm"
   - name: Lightning Activity
     query: select abs(round((select state from states where entity_id = 'sensor.cumulative_lightning' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_lightning' and state <> "unknown" and created < (datetime('now','-60 minutes')) order by created desc  limit 1),0)) as 'delta';
     column: 'delta'
     unit_of_measurement: "Strikes/Hour"
 
+############### Pump House Sensors
+- platform: mqtt
+  name: "Pumphouse Temperature"
+  device_class: "temperature"
+  state_topic: "rtl_433/Pumphouse-pi/devices/Acurite-Tower/B/+/temperature_C"
+  qos: 0
+  unit_of_measurement: "ºF"
+  value_template: "{{ (((value | float) * 9/5) + 32) | round(1) }}"
+
+- platform: mqtt
+  name: "Pumphouse Humidity"
+  device_class: "humidity"
+  state_topic: "rtl_433/Pumphouse-pi/devices/Acurite-Tower/B/+/humidity"
+  qos: 0
+  unit_of_measurement: "pct"
+  value_template: '{{ (value | round(0)) }}' 
+  
 # RSSI indicators
 - platform: mqtt
   name: "Rain Gauge Signal Strength"
