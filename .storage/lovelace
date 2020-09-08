@@ -9,58 +9,31 @@
                             "entity": "binary_sensor.kitchen_freezer_battery"
                         },
                         {
+                            "entity": "sensor.kitchen_freezer_temperature"
+                        },
+                        {
                             "entity": "binary_sensor.garage_freezer_battery"
+                        },
+                        {
+                            "entity": "sensor.garage_freezer_temperature"
                         },
                         {
                             "entity": "binary_sensor.lightning_detector_battery"
                         },
                         {
-                            "entity": "binary_sensor.rain_gauge_battery"
-                        },
-                        {
-                            "entity": "binary_sensor.outdoor_th_battery"
-                        },
-                        {
-                            "entity": "binary_sensor.pumphouse_th_battery"
+                            "entity": "sensor.indoor_temperature"
                         },
                         {
                             "entity": "sensor.indoor_humidity"
                         },
                         {
-                            "entity": "sensor.outdoor_humidity"
+                            "entity": "sensor.storm_distance"
                         },
                         {
-                            "entity": "sensor.basement_humidity"
+                            "entity": "sensor.lightning_activity"
                         },
                         {
-                            "entity": "sensor.shop_humidity"
-                        },
-                        {
-                            "entity": "sensor.pumphouse_humidity"
-                        },
-                        {
-                            "entity": "binary_sensor.shop_exhaust_fan"
-                        },
-                        {
-                            "entity": "sensor.indoor_temperature"
-                        },
-                        {
-                            "entity": "sensor.outdoor_temperature"
-                        },
-                        {
-                            "entity": "sensor.basement_temperature"
-                        },
-                        {
-                            "entity": "sensor.pumphouse_temperature"
-                        },
-                        {
-                            "entity": "sensor.shop_temperature"
-                        },
-                        {
-                            "entity": "sensor.kitchen_freezer_temperature"
-                        },
-                        {
-                            "entity": "sensor.garage_freezer_temperature"
+                            "entity": "binary_sensor.rain_gauge_battery"
                         },
                         {
                             "entity": "sensor.1_hour_rain"
@@ -72,10 +45,40 @@
                             "entity": "sensor.1_week_rain"
                         },
                         {
-                            "entity": "sensor.storm_distance"
+                            "entity": "binary_sensor.outdoor_th_battery"
                         },
                         {
-                            "entity": "sensor.lightning_activity"
+                            "entity": "sensor.outdoor_temperature"
+                        },
+                        {
+                            "entity": "sensor.outdoor_humidity"
+                        },
+                        {
+                            "entity": "binary_sensor.pumphouse_th_battery"
+                        },
+                        {
+                            "entity": "sensor.pumphouse_temperature"
+                        },
+                        {
+                            "entity": "sensor.pumphouse_humidity"
+                        },
+                        {
+                            "entity": "sensor.basement_temperature"
+                        },
+                        {
+                            "entity": "sensor.basement_humidity"
+                        },
+                        {
+                            "entity": "sensor.shop_temperature"
+                        },
+                        {
+                            "entity": "sensor.shop_humidity"
+                        },
+                        {
+                            "entity": "binary_sensor.shop_exhaust_fan"
+                        },
+                        {
+                            "entity": "sensor.house_water_pressure"
                         },
                         {
                             "entity": "sun.sun"
@@ -94,7 +97,7 @@
                                     "entity": "sensor.1_week_rain"
                                 }
                             ],
-                            "hours_to_show": 24,
+                            "hours_to_show": 12,
                             "refresh_interval": 1,
                             "type": "history-graph"
                         },
@@ -127,6 +130,9 @@
                                     "entity": "binary_sensor.driveway_alert",
                                     "icon": "mdi:car-side",
                                     "name": "Driveway"
+                                },
+                                {
+                                    "entity": "binary_sensor.gate_alert"
                                 }
                             ],
                             "show_name": true,
@@ -228,6 +234,18 @@
                             "hours_to_show": 24,
                             "refresh_interval": 1,
                             "title": "Humidity",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.house_water_pressure",
+                                    "name": "House"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 15,
+                            "title": "Water Pressure",
                             "type": "history-graph"
                         },
                         {

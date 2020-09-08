@@ -194,6 +194,7 @@
         Please replace it at your earliest opportunity.'
       title: Low Battery Notice
     service: notify.send_email
+    
 - id: driveway_motion_alert
   alias: arriving visitors
   description: Driveway alert when visitors arrive
@@ -205,6 +206,10 @@
   condition: []
   action:
   - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: There are visitors arriving or departing.
+  - service: notify.judy_sms
     data_template:
       title: Alert from Buteomont
       message: There are visitors arriving or departing.
@@ -224,6 +229,43 @@
       payload: '0'
       topic: rtl_433/raspberrypi/devices/DrivewayAlert/rows/0/data
   initial_state: true
+
+- id: gate_motion_alert
+  alias: visitors at gate
+  description: Driveway alert when gate opener activated
+  trigger:
+  - from: 'off'
+    to: 'on'
+    entity_id: binary_sensor.gate_alert
+    platform: state
+  condition: []
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: There are visitors at the gate.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: There are visitors at the gate.
+  - service: timer.start
+    entity_id: timer.gate_motion
+  initial_state: true
+- id: cancel_driveway_alert
+  alias: Cancel Gate Alert
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.gate_motion
+  action:
+  - service: mqtt.publish
+    data:
+      payload: '0'
+      topic: rtl_433/Pumphouse-pi/devices/GateAlert/rows/0/data
+  initial_state: true
+
+
 - id: '1593048803953'
   alias: Notify On Any Motion
   description: Motion on any motion sensor will send SMS message

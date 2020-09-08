@@ -75,6 +75,13 @@
   unit_of_measurement: "pct"
   value_template: '{{ (value_json.AM2301.Humidity | round(0)) -9 }}' # AM2301 seems to be 9 points too high
 
+- platform: mqtt
+  name: "House Water Pressure"
+  device_class: "pressure"
+  state_topic: "buteomont/house/water/pressure/psi"
+  qos: 0
+  unit_of_measurement: "psi"
+
 ############### Outdoor Sensors
 - platform: mqtt
   name: "Cumulative Rain"

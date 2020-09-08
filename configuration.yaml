@@ -77,4 +77,8 @@ timer:
   driveway_motion:
     duration: '00:01:00'
     icon: mdi:car-hatchback
+    
+  gate_motion:
+    duration: '00:01:00'
+    icon: mdi:car-hatchback
 

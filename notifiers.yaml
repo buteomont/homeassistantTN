@@ -19,3 +19,14 @@
     username: davidpowell@united.net
     password: davidp
     recipient: "6155004621@mms.att.net"
+    
+  - name: judy_sms
+    platform: smtp
+    server: smtp.united.net
+    port: 587
+    sender: "Buteomont@depowell.com"
+    sender_name: "Buteomont"
+    encryption: starttls
+    username: davidpowell@united.net
+    password: davidp
+    recipient: "6154296473@mms.att.net"

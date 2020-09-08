@@ -1,4 +1,2 @@
-2020-08-29 20:21:46 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
-2020-08-29 20:24:50 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-08-29 20:24:50 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 10.10.6.254
-2020-08-29 20:26:44 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Response payload is not completed
+2020-09-08 15:45:49 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.cancel_driveway_alert. Platform automation does not generate unique IDs
+2020-09-08 15:46:03 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform ipp is taking over 10 seconds.
