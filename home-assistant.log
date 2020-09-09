@@ -1,2 +1,6 @@
-2020-09-08 15:45:49 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.cancel_driveway_alert. Platform automation does not generate unique IDs
-2020-09-08 15:46:03 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform ipp is taking over 10 seconds.
+2020-09-08 19:55:37 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.cancel_driveway_alert. Platform automation does not generate unique IDs
+2020-09-08 19:55:45 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
+2020-09-08 19:55:45 WARNING (MainThread) [homeassistant.config_entries] Config entry for ipp not ready yet. Retrying in 5 seconds
+2020-09-08 19:55:58 ERROR (MainThread) [homeassistant.components.ipp] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
+2020-09-08 19:55:58 WARNING (MainThread) [homeassistant.config_entries] Config entry for ipp not ready yet. Retrying in 10 seconds
+2020-09-08 19:58:13 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform ipp is taking over 10 seconds.

@@ -132,7 +132,9 @@
                                     "name": "Driveway"
                                 },
                                 {
-                                    "entity": "binary_sensor.gate_alert"
+                                    "entity": "binary_sensor.gate_alert",
+                                    "icon": "mdi:car-side",
+                                    "name": "Gate"
                                 }
                             ],
                             "show_name": true,
@@ -319,6 +321,11 @@
                                     "name": "Driveway Alert"
                                 },
                                 {
+                                    "entity": "sensor.gate_alert_frequency",
+                                    "icon": "mdi:radio-tower",
+                                    "name": "Gate Alert"
+                                },
+                                {
                                     "entity": "sensor.rain_gauge_frequency",
                                     "icon": "mdi:radio-tower",
                                     "name": "Rain Gauge"
@@ -369,6 +376,11 @@
                                     "entity": "sensor.driveway_alert_signal_strength",
                                     "icon": "mdi:wifi-strength-2",
                                     "name": "Driveway Alert"
+                                },
+                                {
+                                    "entity": "sensor.gate_alert_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Gate Alert"
                                 },
                                 {
                                     "entity": "sensor.rain_gauge_signal_strength",
