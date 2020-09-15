@@ -203,6 +203,13 @@
   value_template: "{{ (value) | round(2) }}"
 
 - platform: mqtt
+  name: "Powell Ridge Alert Signal Strength"
+  state_topic: "rtl_433/raspberrypi/devices/PowellRidgeAlert/rssi"
+  qos: 0
+  unit_of_measurement: "db"
+  value_template: "{{ (value) | round(2) }}"
+
+- platform: mqtt
   name: "Kitchen Motion Signal Strength"
   state_topic: "rtl_433/wwwServer/devices/X10-RF/A/1/rssi"
   qos: 0
@@ -267,8 +274,22 @@
   value_template: "{{ (value) | round(4) }}"
 
 - platform: mqtt
+  name: "Driveway Alert Frequency"
+  state_topic: "rtl_433/raspberrypi/devices/DrivewayAlert/freq"
+  qos: 0
+  unit_of_measurement: "MHz"
+  value_template: "{{ (value) | round(4) }}"
+
+- platform: mqtt
   name: "Gate Alert Frequency"
   state_topic: "rtl_433/Pumphouse-pi/devices/GateAlert/freq"
+  qos: 0
+  unit_of_measurement: "MHz"
+  value_template: "{{ (value) | round(4) }}"
+
+- platform: mqtt
+  name: "Powell Ridge Alert Frequency"
+  state_topic: "rtl_433/raspberrypi/devices/PowellRidgeAlert/freq"
   qos: 0
   unit_of_measurement: "MHz"
   value_template: "{{ (value) | round(4) }}"

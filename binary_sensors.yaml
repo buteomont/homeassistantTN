@@ -31,12 +31,20 @@
 
 - platform: mqtt
   name: "Gate Alert"
-  state_topic: "rtl_433/raspberrypi/devices/DrivewayAlert/rows/0/data"
+  state_topic: "rtl_433/Pumphouse-pi/devices/GateAlert/rows/0/data"
   payload_on: "720"
   payload_off: "0"
   device_class: "motion"
   qos: 0
 
+- platform: mqtt
+  name: "Powell Ridge Alert"
+  state_topic: "rtl_433/raspberrypi/devices/PowellRidgeAlert/rows/0/data"
+  payload_on: "748"
+  payload_off: "0"
+  device_class: "motion"
+  qos: 0
+  
 - platform: mqtt
   name: "Living Room Illuminated"
   state_topic: "rtl_433/wwwServer/devices/X10-RF/E/5/state"

@@ -135,6 +135,11 @@
                                     "entity": "binary_sensor.gate_alert",
                                     "icon": "mdi:car-side",
                                     "name": "Gate"
+                                },
+                                {
+                                    "entity": "binary_sensor.powell_ridge_alert",
+                                    "icon": "mdi:car-side",
+                                    "name": "PR Road"
                                 }
                             ],
                             "show_name": true,
@@ -326,6 +331,11 @@
                                     "name": "Gate Alert"
                                 },
                                 {
+                                    "entity": "sensor.powell_ridge_alert_frequency",
+                                    "icon": "mdi:radio-tower",
+                                    "name": "Powell Ridge Road"
+                                },
+                                {
                                     "entity": "sensor.rain_gauge_frequency",
                                     "icon": "mdi:radio-tower",
                                     "name": "Rain Gauge"
@@ -383,6 +393,11 @@
                                     "name": "Gate Alert"
                                 },
                                 {
+                                    "entity": "sensor.powell_ridge_alert_signal_strength",
+                                    "icon": "mdi:wifi-strength-2",
+                                    "name": "Powell Ridge Road"
+                                },
+                                {
                                     "entity": "sensor.rain_gauge_signal_strength",
                                     "icon": "mdi:wifi-strength-2",
                                     "name": "Rain Gauge"
@@ -429,26 +444,82 @@
                         {
                             "entities": [
                                 {
+                                    "entity": "sensor.driveway_alert_signal_strength",
+                                    "name": "Driveway"
+                                },
+                                {
+                                    "entity": "sensor.gate_alert_signal_strength",
+                                    "name": "Gate"
+                                },
+                                {
+                                    "entity": "sensor.rain_gauge_signal_strength",
+                                    "name": "Rain Gauge"
+                                },
+                                {
+                                    "entity": "sensor.garage_freezer_temperature_signal_strength",
+                                    "name": "Garage Freezer"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_freezer_temperature_signal_strength",
+                                    "name": "Kitchen Freezer"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_motion_signal_strength",
+                                    "name": "Kitchen Motion"
+                                },
+                                {
+                                    "entity": "sensor.living_room_motion_signal_strength",
+                                    "name": "Living Room Motion"
+                                },
+                                {
+                                    "entity": "sensor.study_motion_signal_strength",
+                                    "name": "Study Motion"
+                                },
+                                {
+                                    "entity": "sensor.outdoor_th_signal_strength",
+                                    "name": "Outdoor T&H"
+                                },
+                                {
+                                    "entity": "sensor.lightning_detector_signal_strength",
+                                    "name": "Lightning Detector"
+                                },
+                                {
+                                    "entity": "sensor.powell_ridge_alert_signal_strength",
+                                    "name": "Powell Ridge"
+                                }
+                            ],
+                            "hours_to_show": 12,
+                            "refresh_interval": 1,
+                            "title": "Signal Strength",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                {
                                     "entity": "sensor.network_throughput_out_wlan0",
-                                    "name": "wlan0 throughput"
+                                    "name": "Wireless Throughput"
                                 },
                                 {
                                     "entity": "sensor.cpu_speed"
                                 },
                                 {
-                                    "entity": "sensor.disk_use_percent_home"
+                                    "entity": "sensor.load_1m",
+                                    "name": "CPU Load (1m)"
                                 },
                                 {
-                                    "entity": "sensor.memory_free"
+                                    "entity": "sensor.disk_use_percent_home",
+                                    "name": "Disk Use"
                                 },
                                 {
-                                    "entity": "sensor.memory_use_percent"
+                                    "entity": "sensor.memory_free",
+                                    "name": "Free Memory"
+                                },
+                                {
+                                    "entity": "sensor.memory_use_percent",
+                                    "name": "Memory Use"
                                 },
                                 {
                                     "entity": "sensor.processor_use"
-                                },
-                                {
-                                    "entity": "sensor.load_1m"
                                 }
                             ],
                             "show_header_toggle": false,

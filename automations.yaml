@@ -208,11 +208,11 @@
   - service: notify.send_sms
     data_template:
       title: Alert from Buteomont
-      message: There are visitors arriving or departing.
+      message: There are visitors at the house.
   - service: notify.judy_sms
     data_template:
       title: Alert from Buteomont
-      message: There are visitors arriving or departing.
+      message: There are visitors at the house.
   - service: timer.start
     entity_id: timer.driveway_motion
   initial_state: true
@@ -228,6 +228,41 @@
     data:
       payload: '0'
       topic: rtl_433/raspberrypi/devices/DrivewayAlert/rows/0/data
+  initial_state: true
+    
+- id: powell_ridge_motion_alert
+  alias: Powell Ridge visitors 
+  description: Alert when visitors are on Powell Ridge Road
+  trigger:
+  - from: 'off'
+    to: 'on'
+    entity_id: binary_sensor.powell_ridge_alert
+    platform: state
+  condition: []
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: There are visitors on Powell Ridge Road.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: There are visitors on Powell Ridge Road.
+  - service: timer.start
+    entity_id: timer.powell_ridge_motion
+  initial_state: true
+- id: cancel_powell_ridge_alert
+  alias: Cancel Powell Ridge Alert
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.powell_ridge_motion
+  action:
+  - service: mqtt.publish
+    data:
+      payload: '0'
+      topic: rtl_433/raspberrypi/devices/PowellRidgeAlert/rows/0/data
   initial_state: true
 
 - id: gate_motion_alert
