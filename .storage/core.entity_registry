@@ -427,7 +427,7 @@
                 "icon": null,
                 "name": null,
                 "original_icon": null,
-                "original_name": "Cancel Gate Alert",
+                "original_name": "Cancel Driveway Alert",
                 "platform": "automation",
                 "supported_features": 0,
                 "unique_id": "cancel_driveway_alert",
@@ -527,6 +527,22 @@
                 "platform": "automation",
                 "supported_features": 0,
                 "unique_id": "cancel_powell_ridge_alert",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "automation.cancel_gate_alert",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Cancel Gate Alert",
+                "platform": "automation",
+                "supported_features": 0,
+                "unique_id": "cancel_gate_alert",
                 "unit_of_measurement": null
             }
         ]

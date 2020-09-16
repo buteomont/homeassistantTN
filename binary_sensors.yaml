@@ -27,7 +27,7 @@
   payload_on: "720"
   payload_off: "0"
   device_class: "motion"
-  qos: 0
+  qos: 1
 
 - platform: mqtt
   name: "Gate Alert"
@@ -35,7 +35,7 @@
   payload_on: "720"
   payload_off: "0"
   device_class: "motion"
-  qos: 0
+  qos: 1
 
 - platform: mqtt
   name: "Powell Ridge Alert"
@@ -43,7 +43,7 @@
   payload_on: "748"
   payload_off: "0"
   device_class: "motion"
-  qos: 0
+  qos: 1
   
 - platform: mqtt
   name: "Living Room Illuminated"

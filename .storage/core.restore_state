@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
@@ -10,58 +10,18 @@
                     "user_id": "b5ab0fac69d0431d9ae4da3b2842802a"
                 },
                 "context": {
-                    "id": "3a90d4aca0784381abe2a4aba3d3e1e2",
+                    "id": "77a34bc97c124d6ca12e9593cc099bd3",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.david",
-                "last_changed": "2020-09-14T20:36:11.128680+00:00",
-                "last_updated": "2020-09-14T20:36:19.993978+00:00",
+                "last_changed": "2020-09-16T21:32:37.126024+00:00",
+                "last_updated": "2020-09-16T21:32:49.649242+00:00",
                 "state": "unknown"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
-            "state": {
-                "attributes": {
-                    "duration": "0:01:00",
-                    "editable": false,
-                    "icon": "mdi:car-hatchback",
-                    "remaining": "0:00:00"
-                },
-                "context": {
-                    "id": "0bbc5b72843c4957993f18c0708bcb87",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "timer.driveway_motion",
-                "last_changed": "2020-09-14T21:53:05.002989+00:00",
-                "last_updated": "2020-09-14T21:53:05.002989+00:00",
-                "state": "idle"
-            }
-        },
-        {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
-            "state": {
-                "attributes": {
-                    "duration": "0:01:00",
-                    "editable": false,
-                    "icon": "mdi:car-hatchback",
-                    "remaining": "0:00:00"
-                },
-                "context": {
-                    "id": "0bafc1d6a41c4f5097f056e92949f054",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "timer.powell_ridge_motion",
-                "last_changed": "2020-09-14T21:52:35.002288+00:00",
-                "last_updated": "2020-09-14T21:52:35.002288+00:00",
-                "state": "idle"
-            }
-        },
-        {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "duration": "0:01:00",
@@ -70,18 +30,58 @@
                     "remaining": "0:01:00"
                 },
                 "context": {
-                    "id": "af3255a49bf24585954e11071c8486cc",
+                    "id": "afa53ff050234f5684416921dd42505b",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "timer.gate_motion",
-                "last_changed": "2020-09-14T20:36:14.422094+00:00",
-                "last_updated": "2020-09-14T20:36:14.422094+00:00",
+                "entity_id": "timer.driveway_motion",
+                "last_changed": "2020-09-16T21:32:40.472024+00:00",
+                "last_updated": "2020-09-16T21:32:40.472024+00:00",
                 "state": "idle"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
+            "state": {
+                "attributes": {
+                    "duration": "0:01:00",
+                    "editable": false,
+                    "icon": "mdi:car-hatchback",
+                    "remaining": "0:01:00"
+                },
+                "context": {
+                    "id": "96b2de8c303e48398e92e4f171e99e7f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "timer.powell_ridge_motion",
+                "last_changed": "2020-09-16T21:32:40.472416+00:00",
+                "last_updated": "2020-09-16T21:32:40.472416+00:00",
+                "state": "idle"
+            }
+        },
+        {
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
+            "state": {
+                "attributes": {
+                    "duration": "0:01:00",
+                    "editable": false,
+                    "icon": "mdi:car-hatchback",
+                    "remaining": "0:01:00"
+                },
+                "context": {
+                    "id": "fc72299f20b64715996baa1bb37e4b73",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "timer.gate_motion",
+                "last_changed": "2020-09-16T21:32:40.472671+00:00",
+                "last_updated": "2020-09-16T21:32:40.472671+00:00",
+                "state": "idle"
+            }
+        },
+        {
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Kitchen freezer over temp",
@@ -90,38 +90,38 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "cfa503eb9efd4ae582f630922a2b83ab",
+                    "id": "8e545fb3655d46afa399614b57e03298",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.kitchen_freezer_over_temp",
-                "last_changed": "2020-09-14T20:36:14.489758+00:00",
-                "last_updated": "2020-09-14T20:36:14.489758+00:00",
+                "last_changed": "2020-09-16T21:32:40.536408+00:00",
+                "last_updated": "2020-09-16T21:32:40.536408+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Garage freezer over temp",
                     "id": "garage_freezer_over_temp",
-                    "last_triggered": "2020-09-12T05:33:59.856918+00:00",
+                    "last_triggered": "2020-09-16T17:42:01.185875+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "17624052dc8a4e4cbecc6e4cd353c3b8",
+                    "id": "86b2e698e4b14a6689cc0eb4fa6563dc",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.garage_freezer_over_temp",
-                "last_changed": "2020-09-14T20:36:14.490089+00:00",
-                "last_updated": "2020-09-14T20:36:14.490089+00:00",
+                "last_changed": "2020-09-16T21:32:40.536756+00:00",
+                "last_updated": "2020-09-16T21:32:40.536756+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "High Humidity",
@@ -130,18 +130,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "d5205f16d694400f81c060657a9308c3",
+                    "id": "53247fcb5f804e469a89bd87146d9230",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.high_humidity",
-                "last_changed": "2020-09-14T20:36:14.490355+00:00",
-                "last_updated": "2020-09-14T20:36:14.490355+00:00",
+                "last_changed": "2020-09-16T21:32:40.539226+00:00",
+                "last_updated": "2020-09-16T21:32:40.539226+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Basement Humidity Alarm",
@@ -150,58 +150,58 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "a657e57db92a425b9c7b4f1a7bc91798",
+                    "id": "8639980dc324404095cfe7fb4083e52f",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.basement_humidity_alarm",
-                "last_changed": "2020-09-14T20:36:14.490617+00:00",
-                "last_updated": "2020-09-14T20:36:14.490617+00:00",
+                "last_changed": "2020-09-16T21:32:40.539748+00:00",
+                "last_updated": "2020-09-16T21:32:40.539748+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Reduce Shop Humidity",
                     "id": "reduce_shop_humidity",
-                    "last_triggered": "2020-09-15T00:43:29.277752+00:00",
+                    "last_triggered": "2020-09-16T21:34:48.042412+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "03f2bbd1a0f44d5aadb2bdb53488b694",
-                    "parent_id": "92fafdd18be749dc8dac52fef99c49ed",
+                    "id": "fa1eefdc57fa46ef8b8add0f99794373",
+                    "parent_id": "9d7f491a139944cfa9f01c1377afd9ba",
                     "user_id": null
                 },
                 "entity_id": "automation.reduce_shop_humidity",
-                "last_changed": "2020-09-14T20:36:14.490884+00:00",
-                "last_updated": "2020-09-15T00:43:29.278103+00:00",
+                "last_changed": "2020-09-16T21:32:40.540076+00:00",
+                "last_updated": "2020-09-16T21:34:48.042806+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Shop Humidity Is OK",
                     "id": "shop_humidity_is_ok",
-                    "last_triggered": "2020-09-15T00:25:42.867823+00:00",
+                    "last_triggered": "2020-09-16T21:33:17.007314+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "567c2e4bfcb94c84ba85767fc70a3663",
-                    "parent_id": "cb1e1248122e412c8f71f186fb382756",
+                    "id": "8dd465a2809d4d4080096d3dca12105a",
+                    "parent_id": "879446350b7649eba5ef9213d6a04803",
                     "user_id": null
                 },
                 "entity_id": "automation.shop_humidity_is_ok",
-                "last_changed": "2020-09-14T20:36:14.491171+00:00",
-                "last_updated": "2020-09-15T00:25:42.868199+00:00",
+                "last_changed": "2020-09-16T21:32:40.540419+00:00",
+                "last_updated": "2020-09-16T21:33:17.007721+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "High House Temperature",
@@ -210,18 +210,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "815f327583c9402f88b27b2408bdb847",
+                    "id": "6e9fcfbf2c194a618b3af2e9258601bb",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.high_house_temperature",
-                "last_changed": "2020-09-14T20:36:14.491431+00:00",
-                "last_updated": "2020-09-14T20:36:14.491431+00:00",
+                "last_changed": "2020-09-16T21:32:40.540700+00:00",
+                "last_updated": "2020-09-16T21:32:40.540700+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Notify On Living Room Motion",
@@ -230,18 +230,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "dfa0edb1bde84fb4b7743bf59c0fe282",
+                    "id": "aa879be4bad94c5791e51964022a8a03",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.notify_on_living_room_motion",
-                "last_changed": "2020-09-14T20:36:14.491667+00:00",
-                "last_updated": "2020-09-14T20:36:14.491667+00:00",
+                "last_changed": "2020-09-16T21:32:40.540951+00:00",
+                "last_updated": "2020-09-16T21:32:40.540951+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Garage Freezer Low Battery Alarm",
@@ -250,18 +250,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "e7bc63b9ba8b4df9be39bff93b21f2b0",
+                    "id": "55f36080b6ad46b788f0d7c19a9238d3",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.freezer_battery_low_alarm",
-                "last_changed": "2020-09-14T20:36:14.491877+00:00",
-                "last_updated": "2020-09-14T20:36:14.491877+00:00",
+                "last_changed": "2020-09-16T21:32:40.541176+00:00",
+                "last_updated": "2020-09-16T21:32:40.541176+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Kitchen Freezer Low Battery Alarm",
@@ -270,18 +270,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "c86f3f3d863c4bac97c0cf327c6751b7",
+                    "id": "c5e6b45012e0439cb04c3d9ee64d52b9",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.kitchen_freezer_low_battery_alarm",
-                "last_changed": "2020-09-14T20:36:14.492117+00:00",
-                "last_updated": "2020-09-14T20:36:14.492117+00:00",
+                "last_changed": "2020-09-16T21:32:40.542107+00:00",
+                "last_updated": "2020-09-16T21:32:40.542107+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Lightning Detector Low Battery Alarm",
@@ -290,18 +290,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "e4a4fccb3de14278abb43f52ec6962d8",
+                    "id": "cc33465194e14d0a92b8133365f61bec",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.lightning_detector_low_battery_alarm",
-                "last_changed": "2020-09-14T20:36:14.492352+00:00",
-                "last_updated": "2020-09-14T20:36:14.492352+00:00",
+                "last_changed": "2020-09-16T21:32:40.542402+00:00",
+                "last_updated": "2020-09-16T21:32:40.542402+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Rain Gauge Low Battery Alarm",
@@ -310,18 +310,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "fc718421ee6945adbe6375859cb8a9cb",
+                    "id": "4735a9d4767b411484e4ed2c91f2f43a",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.rain_gauge_low_battery_alarm",
-                "last_changed": "2020-09-14T20:36:14.492587+00:00",
-                "last_updated": "2020-09-14T20:36:14.492587+00:00",
+                "last_changed": "2020-09-16T21:32:40.542657+00:00",
+                "last_updated": "2020-09-16T21:32:40.542657+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Outdoor TH Low Battery Alarm",
@@ -330,118 +330,138 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "b7a32c3d53f540f8b76370986593f7c8",
+                    "id": "e99c9e6cc3d8431f9f68226a3256e14a",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.outdoor_th_low_battery_alarm",
-                "last_changed": "2020-09-14T20:36:14.492817+00:00",
-                "last_updated": "2020-09-14T20:36:14.492817+00:00",
+                "last_changed": "2020-09-16T21:32:40.542908+00:00",
+                "last_updated": "2020-09-16T21:32:40.542908+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "arriving visitors",
                     "id": "driveway_motion_alert",
-                    "last_triggered": "2020-09-14T21:52:03.865105+00:00",
+                    "last_triggered": "2020-09-16T20:04:07.695765+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "a5486c8779cb464985c32fac80c33a15",
-                    "parent_id": "d15abc7cf0154ae7afcd1e03a37cd2bc",
+                    "id": "42235b64b24d4163a4499159cb820d7a",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.arriving_visitors_2",
-                "last_changed": "2020-09-14T20:36:14.493070+00:00",
-                "last_updated": "2020-09-14T21:52:03.865483+00:00",
+                "last_changed": "2020-09-16T21:32:40.543175+00:00",
+                "last_updated": "2020-09-16T21:32:40.543175+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Cancel Driveway Alert",
                     "id": "cancel_driveway_alert",
-                    "last_triggered": "2020-09-14T21:53:05.005036+00:00",
+                    "last_triggered": "2020-09-16T20:05:10.013124+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "3f3ea15fc49d4abf95ff6dcd6bcec723",
-                    "parent_id": "4c026cebbd3c4931addaba9fb26b7be0",
+                    "id": "79587083f6384e09b15e0899b460f1c0",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.cancel_driveway_alert",
-                "last_changed": "2020-09-14T20:36:14.493318+00:00",
-                "last_updated": "2020-09-14T21:53:05.005396+00:00",
+                "last_changed": "2020-09-16T21:32:40.543435+00:00",
+                "last_updated": "2020-09-16T21:32:40.543435+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Powell Ridge visitors",
                     "id": "powell_ridge_motion_alert",
-                    "last_triggered": "2020-09-14T21:51:33.425186+00:00",
+                    "last_triggered": "2020-09-15T16:53:24.364833+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "4c83cf3c42ec4256a87e6f8b53ac47ce",
-                    "parent_id": "db278afddae54441a2e323c6681127cd",
+                    "id": "7c38f832436b446d959114cacebe6e9b",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.powell_ridge_visitors",
-                "last_changed": "2020-09-14T20:36:14.493580+00:00",
-                "last_updated": "2020-09-14T21:51:33.425546+00:00",
+                "last_changed": "2020-09-16T21:32:40.543706+00:00",
+                "last_updated": "2020-09-16T21:32:40.543706+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Cancel Powell Ridge Alert",
                     "id": "cancel_powell_ridge_alert",
-                    "last_triggered": "2020-09-14T21:52:35.004254+00:00",
+                    "last_triggered": "2020-09-16T21:19:43.108571+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "5116342a581d44d78b54e0a99743a440",
-                    "parent_id": "1c4bdaa499144ef8a58365bb520de5d4",
+                    "id": "23b35e40beb54215a6fb06904a01b170",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.cancel_powell_ridge_alert",
-                "last_changed": "2020-09-14T20:36:14.493825+00:00",
-                "last_updated": "2020-09-14T21:52:35.004697+00:00",
+                "last_changed": "2020-09-16T21:32:40.543963+00:00",
+                "last_updated": "2020-09-16T21:32:40.543963+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "visitors at gate",
                     "id": "gate_motion_alert",
-                    "last_triggered": "2020-09-14T19:28:50.357558+00:00",
+                    "last_triggered": "2020-09-16T21:22:39.713668+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "4b978bbfd5ec4c009166c18cef7006ff",
+                    "id": "ebcd3e30b7e143aa95e25c86eeab313e",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.visitors_at_gate",
-                "last_changed": "2020-09-14T20:36:14.494093+00:00",
-                "last_updated": "2020-09-14T20:36:14.494093+00:00",
+                "last_changed": "2020-09-16T21:32:40.544222+00:00",
+                "last_updated": "2020-09-16T21:32:40.544222+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-09-15T00:51:19.998666+00:00",
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Cancel Gate Alert",
+                    "id": "cancel_gate_alert",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "eee0e91a1dff443ab8cd0051b7778876",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.cancel_gate_alert",
+                "last_changed": "2020-09-16T21:32:40.544499+00:00",
+                "last_updated": "2020-09-16T21:32:40.544499+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-09-16T22:17:49.647293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Notify On Any Motion",
@@ -450,13 +470,13 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "b0acf59b5c5240bea715339ce0553ffd",
+                    "id": "928627afa5014de18845c48b1cb145b2",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.notify_on_any_motion",
-                "last_changed": "2020-09-14T20:36:14.494510+00:00",
-                "last_updated": "2020-09-14T20:36:14.494510+00:00",
+                "last_changed": "2020-09-16T21:32:40.544937+00:00",
+                "last_updated": "2020-09-16T21:32:40.544937+00:00",
                 "state": "off"
             }
         }
