@@ -1,8 +1,20 @@
-2020-09-16 17:24:08 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
-2020-09-16 17:24:16 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
-2020-09-16 17:26:21 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
-2020-09-16 17:26:24 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
-2020-09-16 17:26:25 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
-2020-09-16 17:28:41 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
-2020-09-16 17:30:40 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Cannot connect to host 10.10.6.186:80 ssl:None [Connect call failed ('10.10.6.186', 80)]
-2020-09-16 17:32:43 ERROR (MainThread) [homeassistant.components.generic.camera] Error getting new camera image from camperCam: Cannot connect to host 10.10.6.186:80 ssl:None [Connect call failed ('10.10.6.186', 80)]
+2020-09-22 04:22:41 WARNING (MainThread) [homeassistant.config] Key whitelist_external_dirs has been replaced with allowlist_external_dirs. Please update your config
+2020-09-22 04:22:58 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
+2020-09-22 04:23:37 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.2794742256] required key not provided @ data['filename']
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.7/site-packages/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/srv/homeassistant/lib/python3.7/site-packages/homeassistant/core.py", line 1219, in async_call
+    processed_data = handler.schema(service_data)
+  File "/srv/homeassistant/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 272, in __call__
+    return self._compiled([], data)
+  File "/srv/homeassistant/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 594, in validate_dict
+    return base_validate(path, iteritems(data), out)
+  File "/srv/homeassistant/lib/python3.7/site-packages/voluptuous/schema_builder.py", line 432, in validate_mapping
+    raise er.MultipleInvalid(errors)
+voluptuous.error.MultipleInvalid: required key not provided @ data['filename']
+2020-09-22 04:26:09 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
+2020-09-22 04:26:22 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
+2020-09-22 04:27:12 WARNING (SyncWorker_7) [homeassistant.components.smtp.notify] Attachment http://10.10.6.23/snapshot.cgi?user=visitor&pwd= not found. Skipping
+2020-09-22 04:29:52 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null
+2020-09-22 04:30:54 ERROR (MainThread) [frontend.js.latest.202007160] http://www.depowell.com:8123/frontend_latest/chunk.cf565e41b8a8dce0642a.js:133:238 Uncaught TypeError: Cannot read property 'header' of null

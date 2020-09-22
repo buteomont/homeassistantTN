@@ -139,7 +139,7 @@
                                 {
                                     "entity": "binary_sensor.powell_ridge_alert",
                                     "icon": "mdi:car-side",
-                                    "name": "PR Road"
+                                    "name": "PR Rd"
                                 }
                             ],
                             "show_name": true,
@@ -285,6 +285,18 @@
                             "type": "picture-entity"
                         },
                         {
+                            "entities": [
+                                {
+                                    "entity": "sensor.24_hour_pump_output",
+                                    "name": "24 hr Pump"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 1,
+                            "title": "Water Usage",
+                            "type": "history-graph"
+                        },
+                        {
                             "aspect_ratio": "0%",
                             "camera_image": "camera.gatecam",
                             "entity": "camera.gatecam",
@@ -315,6 +327,10 @@
                         },
                         {
                             "entity": "sensor.cumulative_rain"
+                        },
+                        {
+                            "entity": "sensor.pump_water_usage",
+                            "name": "Cumulative Pumped Water"
                         }
                     ],
                     "cards": [

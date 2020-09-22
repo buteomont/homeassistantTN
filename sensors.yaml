@@ -134,6 +134,10 @@
     query: select abs(round((select state from states where entity_id = 'sensor.cumulative_lightning' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_lightning' and state <> "unknown" and created < (datetime('now','-60 minutes')) order by created desc  limit 1),0)) as 'delta';
     column: 'delta'
     unit_of_measurement: "Strikes/Hour"
+  - name: 24 Hour Pump Output
+    query: select abs(round((select state from states where entity_id = 'sensor.pump_water_usage' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.pump_water_usage' and state <> "unknown" and created < (datetime('now','-24 hours')) order by created desc  limit 1),2)) as 'delta';
+    column: 'delta'
+    unit_of_measurement: "liters"
 
 ############### Pump House Sensors
 - platform: mqtt
@@ -151,6 +155,13 @@
   qos: 0
   unit_of_measurement: "pct"
   value_template: '{{ (value | round(0)) }}' 
+
+- platform: mqtt
+  name: "Pump Water Usage"
+#  device_class: "Volume"
+  state_topic: "buteomont/pumphouse/water/flow/pump/liters"
+  qos: 0
+  unit_of_measurement: "liters"
   
 # RSSI indicators
 - platform: mqtt

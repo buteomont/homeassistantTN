@@ -275,14 +275,24 @@
     platform: state
   condition: []
   action:
+  - service: camera.snapshot
+    data:
+      entity_id: camera.gatecam
+      filename: "/tmp/snapshot.jpg"
   - service: notify.send_sms
     data_template:
       title: Alert from Buteomont
       message: There are visitors at the gate.
+      data:
+        images:
+          - '/tmp/snapshot.jpg'
   - service: notify.judy_sms
     data_template:
       title: Alert from Buteomont
       message: There are visitors at the gate.
+      data:
+        images:
+          - '/tmp/snapshot.jpg'
   - service: timer.start
     entity_id: timer.gate_motion
   initial_state: true

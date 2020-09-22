@@ -19,9 +19,10 @@ sensor: !include sensors.yaml
 binary_sensor: !include binary_sensors.yaml
 camera: !include cameras.yaml
 
-
 homeassistant:
   customize: !include customize.yaml
+  whitelist_external_dirs:
+  - /tmp
   
 history:
   exclude:
