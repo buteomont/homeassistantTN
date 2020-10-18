@@ -21,7 +21,7 @@ camera: !include cameras.yaml
 
 homeassistant:
   customize: !include customize.yaml
-  whitelist_external_dirs:
+  allowlist_external_dirs:
   - /tmp
   
 history:
@@ -29,6 +29,7 @@ history:
     entities:
       - sensor.cumulative_rain
       - sensor.cumulative_lightning
+      - sensor.pump_water_usage
       - sensor.cpu_speed
       - sensor.load_1m
       - sensor.memory_free

@@ -81,24 +81,49 @@
                             "entity": "sensor.house_water_pressure"
                         },
                         {
-                            "entity": "sun.sun"
+                            "entity": "binary_sensor.water_heater_state",
+                            "name": "Water Heater"
+                        },
+                        {
+                            "entity": "sensor.24_hour_pump_output",
+                            "name": "Daily Pump"
+                        },
+                        {
+                            "entity": "sensor.1_hour_pump_output",
+                            "name": "Hourly Pump"
+                        },
+                        {
+                            "entity": "sensor.24_hour_city_water_usage",
+                            "name": "Daily Tank"
+                        },
+                        {
+                            "entity": "sensor.1_hour_city_water_usage",
+                            "name": "Hourly Tank"
+                        },
+                        {
+                            "entity": "binary_sensor.package_in_box",
+                            "name": "Package"
                         }
                     ],
                     "cards": [
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.24_hour_rain"
+                                    "entity": "sensor.1_week_rain",
+                                    "name": "Weekly"
                                 },
                                 {
-                                    "entity": "sensor.1_hour_rain"
+                                    "entity": "sensor.24_hour_rain",
+                                    "name": "Daily"
                                 },
                                 {
-                                    "entity": "sensor.1_week_rain"
+                                    "entity": "sensor.1_hour_rain",
+                                    "name": "Hourly"
                                 }
                             ],
                             "hours_to_show": 12,
                             "refresh_interval": 1,
+                            "title": "Rain",
                             "type": "history-graph"
                         },
                         {
@@ -288,7 +313,19 @@
                             "entities": [
                                 {
                                     "entity": "sensor.24_hour_pump_output",
-                                    "name": "24 hr Pump"
+                                    "name": "Daily Pump"
+                                },
+                                {
+                                    "entity": "sensor.1_hour_pump_output",
+                                    "name": "Hourly Pump"
+                                },
+                                {
+                                    "entity": "sensor.24_hour_city_water_usage",
+                                    "name": "Daily Tank"
+                                },
+                                {
+                                    "entity": "sensor.1_hour_city_water_usage",
+                                    "name": "Hourly Tank"
                                 }
                             ],
                             "hours_to_show": 24,
@@ -331,6 +368,10 @@
                         {
                             "entity": "sensor.pump_water_usage",
                             "name": "Cumulative Pumped Water"
+                        },
+                        {
+                            "entity": "sensor.city_water_usage",
+                            "name": "Cumulative City Water"
                         }
                     ],
                     "cards": [

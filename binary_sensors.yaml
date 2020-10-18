@@ -1,5 +1,12 @@
 ############### Shop Binary Sensors
 - platform: mqtt
+  name: "Water Heater State"
+  state_topic: "buteomont/house/water/heater/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 0
+
+- platform: mqtt
   name: "Shop Exhaust Fan"
   state_topic: "stat/shop_exhaust_fan/POWER"
   payload_on: "ON"
@@ -80,6 +87,13 @@
   state_topic: "rtl_433/wwwServer/devices/X10-RF/A/2/state"
   payload_on: "OFF"
   payload_off: "ON"
+  qos: 0
+
+- platform: mqtt
+  name: "Package In Box"
+  state_topic: "buteomont/gate/deliverybox/present"
+  payload_on: "YES"
+  payload_off: "NO"
   qos: 0
 
 - platform: mqtt

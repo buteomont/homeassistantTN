@@ -116,26 +116,46 @@
   qos: 0
   unit_of_measurement: "pct"
 
+  ################ SQL pseudo-sensors
 - platform: sql
   queries:
   - name: 1 Hour Rain
     query: select abs(round((select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" and created < (datetime('now','-1 hours')) order by created desc  limit 1),2)) as 'delta';
     column: 'delta'
     unit_of_measurement: "mm"
+    
   - name: 24 Hour Rain
     query: select abs(round((select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" and created < (datetime('now','-24 hours')) order by created desc  limit 1),2)) as 'delta';
     column: 'delta'
     unit_of_measurement: "mm"
+    
   - name: 1 Week Rain
     query: select abs(round((select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_rain' and state <> "unknown" and created < (datetime('now','-168 hours')) order by created desc  limit 1),2)) as 'delta';
     column: 'delta'
     unit_of_measurement: "mm"
+    
   - name: Lightning Activity
     query: select abs(round((select state from states where entity_id = 'sensor.cumulative_lightning' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.cumulative_lightning' and state <> "unknown" and created < (datetime('now','-60 minutes')) order by created desc  limit 1),0)) as 'delta';
     column: 'delta'
     unit_of_measurement: "Strikes/Hour"
+    
   - name: 24 Hour Pump Output
     query: select abs(round((select state from states where entity_id = 'sensor.pump_water_usage' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.pump_water_usage' and state <> "unknown" and created < (datetime('now','-24 hours')) order by created desc  limit 1),2)) as 'delta';
+    column: 'delta'
+    unit_of_measurement: "liters"
+    
+  - name: 1 Hour Pump Output
+    query: select abs(round((select state from states where entity_id = 'sensor.pump_water_usage' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.pump_water_usage' and state <> "unknown" and created < (datetime('now','-1 hours')) order by created desc  limit 1),2)) as 'delta';
+    column: 'delta'
+    unit_of_measurement: "liters"
+    
+  - name: 24 Hour City Water Usage
+    query: select abs(round((select state from states where entity_id = 'sensor.city_water_usage' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.city_water_usage' and state <> "unknown" and created < (datetime('now','-24 hours')) order by created desc  limit 1),2)) as 'delta';
+    column: 'delta'
+    unit_of_measurement: "liters"
+    
+  - name: 1 Hour City Water Usage
+    query: select abs(round((select state from states where entity_id = 'sensor.city_water_usage' and state <> "unknown" order by created desc limit 1)-(select state from states where entity_id = 'sensor.city_water_usage' and state <> "unknown" and created < (datetime('now','-1 hours')) order by created desc  limit 1),2)) as 'delta';
     column: 'delta'
     unit_of_measurement: "liters"
 
@@ -158,8 +178,13 @@
 
 - platform: mqtt
   name: "Pump Water Usage"
-#  device_class: "Volume"
   state_topic: "buteomont/pumphouse/water/flow/pump/liters"
+  qos: 0
+  unit_of_measurement: "liters"
+
+- platform: mqtt
+  name: "City Water Usage"
+  state_topic: "buteomont/pumphouse/water/flow/tank/liters"
   qos: 0
   unit_of_measurement: "liters"
   
