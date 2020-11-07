@@ -7,7 +7,9 @@
     encryption: starttls
     username: davidpowell@united.net
     password: davidp
-    recipient: "david@depowell.com"
+    recipient: 
+      - david@depowell.com
+      - judy@depowell.com
     
   - name: send_sms
     platform: smtp

@@ -2,15 +2,19 @@
   alias: Kitchen freezer over temp
   description: Freezer in kitchen is over 25 degrees
   trigger:
-  - above: '25'
+  - above: 25
     entity_id: sensor.kitchen_freezer_temperature
     platform: numeric_state
   condition: []
   action:
+  - service: notify.send_sms
     data_template:
       title: Warning from Buteomont
       message: Kitchen freezer temperature is {{states.sensor.kitchen_freezer_temperature.state}}º
-    service: notify.send_sms
+  - service: notify.judy_sms
+    data_template:
+      title: Warning from Buteomont
+      message: Kitchen freezer temperature is {{states.sensor.kitchen_freezer_temperature.state}}º
   initial_state: true
 - id: garage_freezer_over_temp
   alias: Garage freezer over temp
@@ -21,10 +25,14 @@
     platform: numeric_state
   condition: []
   action:
+  - service: notify.send_sms
     data_template:
       title: Warning from Buteomont
       message: Garage freezer temperature is {{states.sensor.garage_freezer_temperature.state}}º
-    service: notify.send_sms
+  - service: notify.judy_sms
+    data_template:
+      title: Warning from Buteomont
+      message: Garage freezer temperature is {{states.sensor.garage_freezer_temperature.state}}º
   initial_state: true
 - id: high_inside_humidity
   alias: High Humidity
@@ -35,24 +43,14 @@
     platform: numeric_state
   condition: []
   action:
+  - service: notify.send_sms
     data_template:
       title: Warning from Buteomont
       message: The humidity in the house at Buteomont is {{states.sensor.house_humidity.state}}%.
-    service: notify.send_sms
-  initial_state: true
-- id: '1590533016721'
-  alias: Basement Humidity Alarm
-  description: Basement is too humid
-  trigger:
-  - entity_id: sensor.basement_humidity
-    above: '80'
-    platform: numeric_state
-  condition: []
-  action:
-  - data_template:
+  - service: notify.judy_sms
+    data_template:
       title: Warning from Buteomont
-      message: Warning - the basement humidity is  {{states.sensor.basement_humidity.state}}%
-    service: notify.send_sms
+      message: The humidity in the house at Buteomont is {{states.sensor.house_humidity.state}}%.
   initial_state: true
 - id: reduce_shop_humidity
   alias: Reduce Shop Humidity
@@ -95,10 +93,14 @@
     platform: numeric_state
   condition: []
   action:
+  - service: notify.send_sms
     data_template:
       title: Warning from Buteomont
       message: The temperature in Buteomont is {{states.sensor.indoor_temperature.state}}º.
-    service: notify.send_sms
+  - service: notify.judy_sms
+    data_template:
+      title: Warning from Buteomont
+      message: The temperature in Buteomont is {{states.sensor.indoor_temperature.state}}º.
   initial_state: true
 - id: '1577817691725'
   alias: Notify On Living Room Motion
@@ -333,3 +335,41 @@
       message: Motion was detected at Buteomont!
     service: notify.send_sms
   initial_state: false
+
+- id: pumphouse_humidity_alert
+  alias: Pumphouse Humidity Alert 
+  description: Alert when pumphouse humidity is too high
+  trigger:
+  - above: 70
+    entity_id: sensor.pumphouse_humidity
+    platform: numeric_state
+  condition: []
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The humidity in the pumphouse is {{states.sensor.pumphouse_humidity.state}}%.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The humidity in the pumphouse is {{states.sensor.pumphouse_humidity.state}}%.
+  initial_state: true
+
+- id: basement_humidity_alert
+  alias: Basement Humidity Alert 
+  description: Alert when basement humidity is too high
+  trigger:
+  - above: 70
+    entity_id: sensor.basement_humidity
+    platform: numeric_state
+  condition: []
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The humidity in the basement is {{states.sensor.basement_humidity.state}}%.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The humidity in the basement is {{states.sensor.basement_humidity.state}}%.
+  initial_state: true

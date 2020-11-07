@@ -103,6 +103,10 @@
                         {
                             "entity": "binary_sensor.package_in_box",
                             "name": "Package"
+                        },
+                        {
+                            "entity": "sensor.delivery_box_distance",
+                            "name": "Package Distance"
                         }
                     ],
                     "cards": [

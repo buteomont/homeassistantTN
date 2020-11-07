@@ -116,6 +116,12 @@
   qos: 0
   unit_of_measurement: "pct"
 
+- platform: mqtt
+  name: "Delivery Box Distance"
+  state_topic: "buteomont/gate/deliverybox/distance"
+  qos: 0
+  unit_of_measurement: "cm"
+
   ################ SQL pseudo-sensors
 - platform: sql
   queries:

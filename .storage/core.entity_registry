@@ -544,6 +544,38 @@
                 "supported_features": 0,
                 "unique_id": "cancel_gate_alert",
                 "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "automation.pumphouse_humidity_alert",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Pumphouse Humidity Alert",
+                "platform": "automation",
+                "supported_features": 0,
+                "unique_id": "pumphouse_humidity_alert",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "automation.basement_humidity_alert",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Basement Humidity Alert",
+                "platform": "automation",
+                "supported_features": 0,
+                "unique_id": "basement_humidity_alert",
+                "unit_of_measurement": null
             }
         ]
     },
