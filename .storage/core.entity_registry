@@ -546,7 +546,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": null,
                 "device_class": null,
                 "device_id": null,
@@ -562,7 +562,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": null,
                 "device_class": null,
                 "device_id": null,
@@ -575,6 +575,38 @@
                 "platform": "automation",
                 "supported_features": 0,
                 "unique_id": "basement_humidity_alert",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "automation.package_has_arrived",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Package Has Arrived",
+                "platform": "automation",
+                "supported_features": 0,
+                "unique_id": "package_arrival_alert",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "automation.package_has_been_removed",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Package Has Been Removed",
+                "platform": "automation",
+                "supported_features": 0,
+                "unique_id": "package_removal_alert",
                 "unit_of_measurement": null
             }
         ]

@@ -373,3 +373,43 @@
       title: Alert from Buteomont
       message: The humidity in the basement is {{states.sensor.basement_humidity.state}}%.
   initial_state: true
+  
+- id: package_arrival_alert
+  alias: Package Has Arrived 
+  description: Alert when a package is placed in the delivery box
+  trigger:
+  - from: 'NO'
+    to: 'YES'
+    entity_id: binary_sensor.package_in_box
+    platform: state
+  condition: []
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: A package has arrived.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: A package has arrived.
+  initial_state: true
+  
+- id: package_removal_alert
+  alias: Package Has Been Removed 
+  description: Alert when a package is removed from the delivery box
+  trigger:
+  - from: 'YES'
+    to: 'NO'
+    entity_id: binary_sensor.package_in_box
+    platform: state
+  condition: []
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: A package has been removed from the delivery box.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: A package has been removed from the delivery box.
+  initial_state: true
