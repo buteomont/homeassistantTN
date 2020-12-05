@@ -121,7 +121,14 @@
   state_topic: "buteomont/gate/deliverybox/distance"
   qos: 0
   unit_of_measurement: "cm"
-
+  
+- platform: mqtt
+  name: "Delivery Box Battery"
+  device_class: "battery"
+  state_topic: "buteomont/gate/deliverybox/battery"
+  qos: 0
+  unit_of_measurement: "volts"
+  
   ################ SQL pseudo-sensors
 - platform: sql
   queries:

@@ -121,9 +121,8 @@
   description: Send email when battery in freezer sensor is low
   trigger:
   - entity_id: binary_sensor.garage_freezer_battery
-    from: '0'
+    from: 'on'
     platform: state
-    to: '1'
   condition: []
   action:
   - data_template:
@@ -137,9 +136,8 @@
   description: Send email when battery in freezer sensor is low
   trigger:
   - entity_id: binary_sensor.kitchen_freezer_battery
-    from: '0'
+    from: 'on'
     platform: state
-    to: '1'
   condition: []
   action:
   - data_template:
@@ -153,9 +151,8 @@
   description: Send email when battery in lightning detector is low
   trigger:
   - entity_id: binary_sensor.lightning_detector_battery
-    from: '0'
+    from: 'on'
     platform: state
-    to: '1'
   condition: []
   action:
   - data_template:
@@ -169,9 +166,8 @@
   description: Send email when battery in rain gauge is low
   trigger:
   - entity_id: binary_sensor.rain_gauge_battery
-    from: '0'
+    from: 'on'
     platform: state
-    to: '1'
   condition: []
   action:
   - data_template:
@@ -185,9 +181,8 @@
   description: Send email when battery in outdoor temp/humidity sensor is low
   trigger:
   - entity_id: binary_sensor.outdoor_th_battery
-    from: '0'
+    from: 'on'
     platform: state
-    to: '1'
   condition: []
   action:
   - data_template:
@@ -378,28 +373,22 @@
   alias: Package Has Arrived 
   description: Alert when a package is placed in the delivery box
   trigger:
-  - from: 'NO'
-    to: 'YES'
-    entity_id: binary_sensor.package_in_box
     platform: state
+    entity_id: binary_sensor.package_in_box
+    to: 'on'
   condition: []
   action:
   - service: notify.send_sms
     data_template:
       title: Alert from Buteomont
-      message: A package has arrived.
-  - service: notify.judy_sms
-    data_template:
-      title: Alert from Buteomont
-      message: A package has arrived.
+      message: A package has arrived. ({{states.sensor.delivery_box_distance.state}})
   initial_state: true
-  
+ 
 - id: package_removal_alert
   alias: Package Has Been Removed 
   description: Alert when a package is removed from the delivery box
   trigger:
-  - from: 'YES'
-    to: 'NO'
+  - to: 'off'
     entity_id: binary_sensor.package_in_box
     platform: state
   condition: []
@@ -408,8 +397,149 @@
     data_template:
       title: Alert from Buteomont
       message: A package has been removed from the delivery box.
+  initial_state: true
+  
+- id: basement_power_off_alert
+  alias: Basement Power Off 
+  description: Alert when the basement power goes off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.basement_power
+    to: 'off'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The basement power appears to be off.
   - service: notify.judy_sms
     data_template:
       title: Alert from Buteomont
-      message: A package has been removed from the delivery box.
+      message: The basement power appears to be off.
   initial_state: true
+   
+- id: basement_power_on_alert
+  alias: Basement Power On 
+  description: Alert when the basement power comes back on
+  trigger:
+    platform: state
+    entity_id: binary_sensor.basement_power
+    to: 'on'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The basement power is back on.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The basement power is back on.
+  initial_state: true
+   
+- id: garage_power_off_alert
+  alias: Garage Power Off 
+  description: Alert when the garage power goes off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.garage_power
+    to: 'off'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The garage power appears to be off.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The garage power appears to be off.
+  initial_state: true
+   
+- id: garage_power_on_alert
+  alias: Garage Power On 
+  description: Alert when the garage power comes back on
+  trigger:
+    platform: state
+    entity_id: binary_sensor.garage_power
+    to: 'on'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The garage power is back on.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The garage power is back on.
+  initial_state: true
+   
+- id: pumphouse_power_off_alert
+  alias: Pumphouse Power Off 
+  description: Alert when the pumphouse power goes off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.pumphouse_power
+    to: 'off'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The pumphouse power appears to be off.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The pumphouse power appears to be off.
+  initial_state: true
+   
+- id: pumphouse_power_on_alert
+  alias: Pumphouse Power On 
+  description: Alert when the pumphouse power comes back on
+  trigger:
+    platform: state
+    entity_id: binary_sensor.pumphouse_power
+    to: 'on'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The pumphouse power is back on.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The pumphouse power is back on.
+  initial_state: true
+
+- id: shop_power_off_alert
+  alias: Shop Power Off 
+  description: Alert when the shop power goes off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.shop_power
+    to: 'off'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The shop power appears to be off.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The shop power appears to be off.
+  initial_state: true
+   
+- id: shop_power_on_alert
+  alias: Shop Power On 
+  description: Alert when the shop power comes back on
+  trigger:
+    platform: state
+    entity_id: binary_sensor.shop_power
+    to: 'on'
+  action:
+  - service: notify.send_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The shop power is back on.
+  - service: notify.judy_sms
+    data_template:
+      title: Alert from Buteomont
+      message: The shop power is back on.
+  initial_state: true
+   

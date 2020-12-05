@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
@@ -10,38 +10,18 @@
                     "user_id": "b5ab0fac69d0431d9ae4da3b2842802a"
                 },
                 "context": {
-                    "id": "7cb43e21e798463ab5a2f214102c9b89",
+                    "id": "416a9ab75b7344a98fb2bd1cbf8ad064",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.david",
-                "last_changed": "2020-11-07T04:22:28.414683+00:00",
-                "last_updated": "2020-11-07T04:22:40.943889+00:00",
+                "last_changed": "2020-12-04T23:00:31.243923+00:00",
+                "last_updated": "2020-12-04T23:00:39.358774+00:00",
                 "state": "unknown"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
-            "state": {
-                "attributes": {
-                    "duration": "0:01:00",
-                    "editable": false,
-                    "icon": "mdi:car-hatchback",
-                    "remaining": "0:00:00"
-                },
-                "context": {
-                    "id": "1facfbff9dd14efbad01c3324d355665",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "timer.driveway_motion",
-                "last_changed": "2020-11-07T22:33:03.001878+00:00",
-                "last_updated": "2020-11-07T22:33:03.001878+00:00",
-                "state": "idle"
-            }
-        },
-        {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "duration": "0:01:00",
@@ -50,38 +30,58 @@
                     "remaining": "0:01:00"
                 },
                 "context": {
-                    "id": "dba93f6eed9b4b619e9d299f6124a1ee",
+                    "id": "579b38b3384f4189b0656a399da1ced6",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "timer.powell_ridge_motion",
-                "last_changed": "2020-11-07T04:22:31.783030+00:00",
-                "last_updated": "2020-11-07T04:22:31.783030+00:00",
+                "entity_id": "timer.driveway_motion",
+                "last_changed": "2020-12-04T23:00:34.706245+00:00",
+                "last_updated": "2020-12-04T23:00:34.706245+00:00",
                 "state": "idle"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "duration": "0:01:00",
                     "editable": false,
                     "icon": "mdi:car-hatchback",
-                    "remaining": "0:00:00"
+                    "remaining": "0:01:00"
                 },
                 "context": {
-                    "id": "97e270fe02554c5d8206cf2dec493ae5",
+                    "id": "95834f8b0bf94b769ba07722bd9f0ed6",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "timer.gate_motion",
-                "last_changed": "2020-11-07T22:46:13.001820+00:00",
-                "last_updated": "2020-11-07T22:46:13.001820+00:00",
+                "entity_id": "timer.powell_ridge_motion",
+                "last_changed": "2020-12-04T23:00:34.706535+00:00",
+                "last_updated": "2020-12-04T23:00:34.706535+00:00",
                 "state": "idle"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "duration": "0:01:00",
+                    "editable": false,
+                    "icon": "mdi:car-hatchback",
+                    "remaining": "0:01:00"
+                },
+                "context": {
+                    "id": "b14ce3a6af04405683fb79b523d7b752",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "timer.gate_motion",
+                "last_changed": "2020-12-04T23:00:34.706817+00:00",
+                "last_updated": "2020-12-04T23:00:34.706817+00:00",
+                "state": "idle"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Kitchen freezer over temp",
@@ -90,18 +90,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "5ce02acadabf410196470310abcf6478",
+                    "id": "c9d736c30dd34cd3b1f8d474c3f334bd",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.kitchen_freezer_over_temp",
-                "last_changed": "2020-11-07T04:22:31.853719+00:00",
-                "last_updated": "2020-11-07T04:22:31.853719+00:00",
+                "last_changed": "2020-12-04T23:00:34.769472+00:00",
+                "last_updated": "2020-12-04T23:00:34.769472+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Garage freezer over temp",
@@ -110,18 +110,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "a51edda91d4c48a48a7f2a1f0696a24f",
+                    "id": "f0f220364176480d9f91deeefcf24acf",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.garage_freezer_over_temp",
-                "last_changed": "2020-11-07T04:22:31.854089+00:00",
-                "last_updated": "2020-11-07T04:22:31.854089+00:00",
+                "last_changed": "2020-12-04T23:00:34.769822+00:00",
+                "last_updated": "2020-12-04T23:00:34.769822+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "High Humidity",
@@ -130,78 +130,78 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "ceb3446e4ca8427eba09d572f9ca7c15",
+                    "id": "d06750feb8064d048a210b53d1707b97",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.high_humidity",
-                "last_changed": "2020-11-07T04:22:31.854363+00:00",
-                "last_updated": "2020-11-07T04:22:31.854363+00:00",
+                "last_changed": "2020-12-04T23:00:34.770092+00:00",
+                "last_updated": "2020-12-04T23:00:34.770092+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Reduce Shop Humidity",
                     "id": "reduce_shop_humidity",
-                    "last_triggered": "2020-11-08T00:29:08.908325+00:00",
+                    "last_triggered": "2020-12-03T23:06:54.952696+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "73422a5a66c94844951258dd9590603b",
-                    "parent_id": "20099142a52940aba69adf88545db9d8",
+                    "id": "ae5623a8883a461a8be62b4bedd6e253",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.reduce_shop_humidity",
-                "last_changed": "2020-11-07T04:22:31.854635+00:00",
-                "last_updated": "2020-11-08T00:29:08.908519+00:00",
+                "last_changed": "2020-12-04T23:00:34.770355+00:00",
+                "last_updated": "2020-12-04T23:00:34.770355+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Shop Humidity Is OK",
                     "id": "shop_humidity_is_ok",
-                    "last_triggered": "2020-11-07T23:48:21.050886+00:00",
+                    "last_triggered": "2020-12-04T23:00:53.672866+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "e9335bd358744b99a8b274bc4e6068cc",
-                    "parent_id": "4724b63579984070a6df6835051a0b7b",
+                    "id": "8aa21f97235946d2ba8b83ff77fff755",
+                    "parent_id": "b778d42136984ea3b781f7cf8e76a239",
                     "user_id": null
                 },
                 "entity_id": "automation.shop_humidity_is_ok",
-                "last_changed": "2020-11-07T04:22:31.854917+00:00",
-                "last_updated": "2020-11-07T23:48:21.051312+00:00",
+                "last_changed": "2020-12-04T23:00:34.770635+00:00",
+                "last_updated": "2020-12-04T23:00:53.673048+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "High House Temperature",
                     "id": "high_inside_temperature",
-                    "last_triggered": "2020-06-03T17:29:27.926174+00:00",
+                    "last_triggered": "2020-11-27T14:58:11.702072+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "b95debf7ab0045ca98c69e8eefd98008",
+                    "id": "74842b2b7f124047bc17043dec08758d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.high_house_temperature",
-                "last_changed": "2020-11-07T04:22:31.855182+00:00",
-                "last_updated": "2020-11-07T04:22:31.855182+00:00",
+                "last_changed": "2020-12-04T23:00:34.770897+00:00",
+                "last_updated": "2020-12-04T23:00:34.770897+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Notify On Living Room Motion",
@@ -210,58 +210,58 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "0030bba861ec4fc192a7b878a32a0a55",
+                    "id": "60f8fbe7d5844996be018259b3028961",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.notify_on_living_room_motion",
-                "last_changed": "2020-11-07T04:22:31.855482+00:00",
-                "last_updated": "2020-11-07T04:22:31.855482+00:00",
+                "last_changed": "2020-12-04T23:00:34.771141+00:00",
+                "last_updated": "2020-12-04T23:00:34.771141+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Garage Freezer Low Battery Alarm",
                     "id": "1590533675336",
-                    "last_triggered": "2020-05-26T23:16:01.087540+00:00",
+                    "last_triggered": "2020-11-23T03:05:29.752833+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "50876d07f09b4fd6a9b06c7b8ee81dd1",
+                    "id": "d4743137522242a6aa5b850a5573a3d4",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.freezer_battery_low_alarm",
-                "last_changed": "2020-11-07T04:22:31.855715+00:00",
-                "last_updated": "2020-11-07T04:22:31.855715+00:00",
+                "last_changed": "2020-12-04T23:00:34.771368+00:00",
+                "last_updated": "2020-12-04T23:00:34.771368+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Kitchen Freezer Low Battery Alarm",
                     "id": "kitchenFreezerLowBatteryAlarm",
-                    "last_triggered": "2020-05-27T01:35:03.245093+00:00",
+                    "last_triggered": "2020-11-28T00:54:39.144972+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "07ef8b95116344b798ee6717994d9fb1",
+                    "id": "2314218dd26f4926b9361b4867aaf4b4",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.kitchen_freezer_low_battery_alarm",
-                "last_changed": "2020-11-07T04:22:31.855974+00:00",
-                "last_updated": "2020-11-07T04:22:31.855974+00:00",
+                "last_changed": "2020-12-04T23:00:34.771624+00:00",
+                "last_updated": "2020-12-04T23:00:34.771624+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Lightning Detector Low Battery Alarm",
@@ -270,18 +270,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "152b528b8fb04860bf571625a8ce4b1d",
+                    "id": "700a18c6900845199207b29851abcf3d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.lightning_detector_low_battery_alarm",
-                "last_changed": "2020-11-07T04:22:31.856228+00:00",
-                "last_updated": "2020-11-07T04:22:31.856228+00:00",
+                "last_changed": "2020-12-04T23:00:34.771872+00:00",
+                "last_updated": "2020-12-04T23:00:34.771872+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Rain Gauge Low Battery Alarm",
@@ -290,18 +290,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "bfbe802f3f5f44bda42c7efed24e575d",
+                    "id": "953f3d49c53c4cbe91056c4140c8489a",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.rain_gauge_low_battery_alarm",
-                "last_changed": "2020-11-07T04:22:31.856476+00:00",
-                "last_updated": "2020-11-07T04:22:31.856476+00:00",
+                "last_changed": "2020-12-04T23:00:34.772140+00:00",
+                "last_updated": "2020-12-04T23:00:34.772140+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Outdoor TH Low Battery Alarm",
@@ -310,138 +310,138 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "3911a1e7e5104c5699d875b900967c93",
+                    "id": "8dc2bce2d1a14cf49a032fb20b4bfe3d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.outdoor_th_low_battery_alarm",
-                "last_changed": "2020-11-07T04:22:31.857287+00:00",
-                "last_updated": "2020-11-07T04:22:31.857287+00:00",
+                "last_changed": "2020-12-04T23:00:34.772392+00:00",
+                "last_updated": "2020-12-04T23:00:34.772392+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "arriving visitors",
                     "id": "driveway_motion_alert",
-                    "last_triggered": "2020-11-07T22:32:00.855666+00:00",
+                    "last_triggered": "2020-12-04T21:54:28.091424+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "04feba2b4cf34b458425de9000b3f879",
-                    "parent_id": "665f65e57b1d49b99688b6a74f0e9155",
+                    "id": "2dcb55acc0484cd29ffc48f7938de6f3",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.arriving_visitors_2",
-                "last_changed": "2020-11-07T04:22:31.857831+00:00",
-                "last_updated": "2020-11-07T22:32:00.855845+00:00",
+                "last_changed": "2020-12-04T23:00:34.772643+00:00",
+                "last_updated": "2020-12-04T23:00:34.772643+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Cancel Driveway Alert",
                     "id": "cancel_driveway_alert",
-                    "last_triggered": "2020-11-07T22:33:03.004182+00:00",
+                    "last_triggered": "2020-12-04T21:55:28.008919+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "d1c9121bc12943508e7b39677f4c27a8",
-                    "parent_id": "03f295f2f76d4d01b74ea646fc329126",
+                    "id": "1d3754df34064c5da3a5e07c5dc1cf3f",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.cancel_driveway_alert",
-                "last_changed": "2020-11-07T04:22:31.858132+00:00",
-                "last_updated": "2020-11-07T22:33:03.004609+00:00",
+                "last_changed": "2020-12-04T23:00:34.772905+00:00",
+                "last_updated": "2020-12-04T23:00:34.772905+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Powell Ridge visitors",
                     "id": "powell_ridge_motion_alert",
-                    "last_triggered": "2020-11-07T02:49:24.108886+00:00",
+                    "last_triggered": "2020-12-04T15:56:30.562385+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "3d4297c7eb4f4f1c8e32372fe174eb8a",
+                    "id": "2e2c79c5eb334abf9756f63cb3b5c13e",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.powell_ridge_visitors",
-                "last_changed": "2020-11-07T04:22:31.858406+00:00",
-                "last_updated": "2020-11-07T04:22:31.858406+00:00",
+                "last_changed": "2020-12-04T23:00:34.773157+00:00",
+                "last_updated": "2020-12-04T23:00:34.773157+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Cancel Powell Ridge Alert",
                     "id": "cancel_powell_ridge_alert",
-                    "last_triggered": "2020-11-07T02:50:26.004077+00:00",
+                    "last_triggered": "2020-12-04T15:57:31.003392+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "5196a21c7f6d4c25813013ce349b797b",
+                    "id": "4318336eac4b4d829f5541657eda6a8a",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.cancel_powell_ridge_alert",
-                "last_changed": "2020-11-07T04:22:31.858674+00:00",
-                "last_updated": "2020-11-07T04:22:31.858674+00:00",
+                "last_changed": "2020-12-04T23:00:34.773411+00:00",
+                "last_updated": "2020-12-04T23:00:34.773411+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "visitors at gate",
                     "id": "gate_motion_alert",
-                    "last_triggered": "2020-11-07T22:45:09.163398+00:00",
+                    "last_triggered": "2020-12-03T20:40:42.254302+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "e37d145b9f2540a8af79c75ff4654c89",
-                    "parent_id": "6b5388cb682a4d7e8b44625c0bbbf962",
+                    "id": "f7fdda18c61a4d5fa4e1d4c5cd022cba",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.visitors_at_gate",
-                "last_changed": "2020-11-07T04:22:31.858999+00:00",
-                "last_updated": "2020-11-07T22:45:09.163696+00:00",
+                "last_changed": "2020-12-04T23:00:34.773769+00:00",
+                "last_updated": "2020-12-04T23:00:34.773769+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Cancel Gate Alert",
                     "id": "cancel_gate_alert",
-                    "last_triggered": "2020-11-07T22:46:13.003791+00:00",
+                    "last_triggered": "2020-12-03T20:41:45.004880+00:00",
                     "mode": "single"
                 },
                 "context": {
-                    "id": "7252093200c04fb69f7e927f10b46923",
-                    "parent_id": "aba68199fc7b4f479a337ef2e1c5a8ba",
+                    "id": "d56c6cb4a3954289a5702864a8981a40",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.cancel_gate_alert",
-                "last_changed": "2020-11-07T04:22:31.859270+00:00",
-                "last_updated": "2020-11-07T22:46:13.004134+00:00",
+                "last_changed": "2020-12-04T23:00:34.774034+00:00",
+                "last_updated": "2020-12-04T23:00:34.774034+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Notify On Any Motion",
@@ -450,18 +450,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "f6ee448b8f964ebcb8cde49da83cd093",
+                    "id": "d075e5af842f47cc95a29735c3013e6d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.notify_on_any_motion",
-                "last_changed": "2020-11-07T04:22:31.859534+00:00",
-                "last_updated": "2020-11-07T04:22:31.859534+00:00",
+                "last_changed": "2020-12-04T23:00:34.774304+00:00",
+                "last_updated": "2020-12-04T23:00:34.774304+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Pumphouse Humidity Alert",
@@ -470,18 +470,18 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "679b3befc793490d8ec1e2383e0d696b",
+                    "id": "966361ded57e4c898cde001ea779fdf3",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.pumphouse_humidity_alert",
-                "last_changed": "2020-11-07T04:22:31.859760+00:00",
-                "last_updated": "2020-11-07T04:22:31.859760+00:00",
+                "last_changed": "2020-12-04T23:00:34.774535+00:00",
+                "last_updated": "2020-12-04T23:00:34.774535+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-11-08T00:37:41.035861+00:00",
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Basement Humidity Alert",
@@ -490,14 +490,254 @@
                     "mode": "single"
                 },
                 "context": {
-                    "id": "be31100761cb40eea2e8259947ee04c2",
+                    "id": "fe0f5f56aedf4697b2343813e263ff6a",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.basement_humidity_alert",
-                "last_changed": "2020-11-07T04:22:31.860014+00:00",
-                "last_updated": "2020-11-07T04:22:31.860014+00:00",
+                "last_changed": "2020-12-04T23:00:34.774792+00:00",
+                "last_updated": "2020-12-04T23:00:34.774792+00:00",
                 "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Package Has Arrived",
+                    "id": "package_arrival_alert",
+                    "last_triggered": "2020-12-03T19:54:04.962354+00:00",
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "c904560c07d648dd91de131ea8a7b3a4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.package_has_arrived",
+                "last_changed": "2020-12-04T23:00:34.775040+00:00",
+                "last_updated": "2020-12-04T23:00:34.775040+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Package Has Been Removed",
+                    "id": "package_removal_alert",
+                    "last_triggered": "2020-12-03T20:41:28.136176+00:00",
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "36f1f8cfcbe6480a8dbad75ca078f80a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.package_has_been_removed",
+                "last_changed": "2020-12-04T23:00:34.775287+00:00",
+                "last_updated": "2020-12-04T23:00:34.775287+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Basement Power Off",
+                    "id": "basement_power_off_alert",
+                    "last_triggered": "2020-12-04T22:59:12.004598+00:00",
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "6c52cce5f09d4c8091d98549d6c85ac4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.basement_power_off",
+                "last_changed": "2020-12-04T23:00:34.775533+00:00",
+                "last_updated": "2020-12-04T23:00:34.775533+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Basement Power On",
+                    "id": "basement_power_on_alert",
+                    "last_triggered": "2020-12-04T22:59:12.046706+00:00",
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "e8b2b9dca4404cf79cbabb6b983f6c0a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.basement_power_on",
+                "last_changed": "2020-12-04T23:00:34.775790+00:00",
+                "last_updated": "2020-12-04T23:00:34.775790+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Garage Power Off",
+                    "id": "garage_power_off_alert",
+                    "last_triggered": "2020-12-04T16:45:23.595252+00:00",
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "34281e8fa4e0422b90227bdbe495cdf9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.garage_power_off",
+                "last_changed": "2020-12-04T23:00:34.776039+00:00",
+                "last_updated": "2020-12-04T23:00:34.776039+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Garage Power On",
+                    "id": "garage_power_on_alert",
+                    "last_triggered": "2020-12-04T17:59:10.664335+00:00",
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "624c97e3a5bd45e09a7a80321eb8adde",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.garage_power_on",
+                "last_changed": "2020-12-04T23:00:34.776285+00:00",
+                "last_updated": "2020-12-04T23:00:34.776285+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Pumphouse Power Off",
+                    "id": "pumphouse_power_off_alert",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "c399fe808ad34ab4bf7aec2e3e62f40d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.pumphouse_power_off",
+                "last_changed": "2020-12-04T23:00:34.776527+00:00",
+                "last_updated": "2020-12-04T23:00:34.776527+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Pumphouse Power On",
+                    "id": "pumphouse_power_on_alert",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "9c0fbdf6d1dc4ad1aea51d4d6ab50b0f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.pumphouse_power_on",
+                "last_changed": "2020-12-04T23:00:34.779599+00:00",
+                "last_updated": "2020-12-04T23:00:34.779599+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Shop Power Off",
+                    "id": "shop_power_off_alert",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "3b2d42db71394889a1230563b18a46e6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.shop_power_off",
+                "last_changed": "2020-12-04T23:00:34.779872+00:00",
+                "last_updated": "2020-12-04T23:00:34.779872+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-05T00:45:39.352316+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Shop Power On",
+                    "id": "shop_power_on_alert",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "e676e278bca64d5a833a7afb5aba88e6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.shop_power_on",
+                "last_changed": "2020-12-04T23:00:34.780130+00:00",
+                "last_updated": "2020-12-04T23:00:34.780130+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-03T23:02:27.279818+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Basement Power",
+                    "id": "basement_power_alert",
+                    "last_triggered": "2020-12-03T22:54:34.800831+00:00",
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "7cc4ddf8c4da4e6c8ee7c92bdd89d529",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.basement_power",
+                "last_changed": "2020-12-03T22:52:38.452623+00:00",
+                "last_updated": "2020-12-03T22:54:34.801269+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-12-03T22:12:26.163745+00:00",
+            "state": {
+                "attributes": {
+                    "duration": "0:02:00",
+                    "editable": false,
+                    "icon": "mdi:power-socket-us",
+                    "remaining": "0:02:00"
+                },
+                "context": {
+                    "id": "be7c0e4659e647fbb6736ff6efdb2c8a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "timer.basement_power_off",
+                "last_changed": "2020-12-03T21:00:30.360568+00:00",
+                "last_updated": "2020-12-03T21:00:30.360568+00:00",
+                "state": "idle"
             }
         }
     ],

@@ -102,11 +102,10 @@
                         },
                         {
                             "entity": "binary_sensor.package_in_box",
-                            "name": "Package"
+                            "name": "Package In Box"
                         },
                         {
-                            "entity": "sensor.delivery_box_distance",
-                            "name": "Package Distance"
+                            "entity": "sensor.delivery_box_battery"
                         }
                     ],
                     "cards": [
@@ -376,6 +375,10 @@
                         {
                             "entity": "sensor.city_water_usage",
                             "name": "Cumulative City Water"
+                        },
+                        {
+                            "entity": "sensor.delivery_box_distance",
+                            "name": "Package Distance"
                         }
                     ],
                     "cards": [

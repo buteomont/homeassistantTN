@@ -1,5 +1,20 @@
 ############### Shop Binary Sensors
 - platform: mqtt
+  name: "Shop Exhaust Fan"
+  state_topic: "stat/shop_exhaust_fan/POWER"
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 0
+
+- platform: mqtt
+  name: "Shop Power"
+  state_topic: "tele/shop_exhaust_fan/LWT"
+  payload_on: "Online"
+  payload_off: "Offline"
+  qos: 0
+  
+############## House Binary Sensors
+- platform: mqtt
   name: "Water Heater State"
   state_topic: "buteomont/house/water/heater/state"
   payload_on: "ON"
@@ -7,10 +22,24 @@
   qos: 0
 
 - platform: mqtt
-  name: "Shop Exhaust Fan"
-  state_topic: "stat/shop_exhaust_fan/POWER"
-  payload_on: "ON"
-  payload_off: "OFF"
+  name: "Basement Power"
+  state_topic: "tele/basement_th/LWT"
+  payload_on: "Online"
+  payload_off: "Offline"
+  qos: 0
+
+- platform: mqtt
+  name: "Garage Power"
+  state_topic: "tele/buteomont/house/garage/powermonitor/LWT"
+  payload_on: "Online"
+  payload_off: "Offline"
+  qos: 0
+
+- platform: mqtt
+  name: "Pumphouse Power"
+  state_topic: "tele/buteomont/pumphouse/pumpserver/LWT"
+  payload_on: "Online"
+  payload_off: "Offline"
   qos: 0
 
 - platform: mqtt
